@@ -1,0 +1,12 @@
+C:\Users\admin\source\repos\karabas\karabas.Domain\bin\Debug\net8.0\rezolvam.Domain.deps.json
+C:\Users\admin\source\repos\karabas\karabas.Domain\bin\Debug\net8.0\rezolvam.Domain.dll
+C:\Users\admin\source\repos\karabas\karabas.Domain\bin\Debug\net8.0\rezolvam.Domain.pdb
+C:\Users\admin\source\repos\karabas\karabas.Domain\obj\Debug\net8.0\rezolvam.Domain.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\karabas\karabas.Domain\obj\Debug\net8.0\rezolvam.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\karabas\karabas.Domain\obj\Debug\net8.0\rezolvam.Domain.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\karabas\karabas.Domain\obj\Debug\net8.0\rezolvam.Domain.AssemblyInfo.cs
+C:\Users\admin\source\repos\karabas\karabas.Domain\obj\Debug\net8.0\rezolvam.Domain.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\karabas\karabas.Domain\obj\Debug\net8.0\rezolvam.Domain.dll
+C:\Users\admin\source\repos\karabas\karabas.Domain\obj\Debug\net8.0\refint\rezolvam.Domain.dll
+C:\Users\admin\source\repos\karabas\karabas.Domain\obj\Debug\net8.0\rezolvam.Domain.pdb
+C:\Users\admin\source\repos\karabas\karabas.Domain\obj\Debug\net8.0\ref\rezolvam.Domain.dll

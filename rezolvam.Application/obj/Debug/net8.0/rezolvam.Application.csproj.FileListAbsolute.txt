@@ -1,0 +1,15 @@
+C:\Users\admin\source\repos\karabas\rezolvam.Application\bin\Debug\net8.0\rezolvam.Application.deps.json
+C:\Users\admin\source\repos\karabas\rezolvam.Application\bin\Debug\net8.0\rezolvam.Application.dll
+C:\Users\admin\source\repos\karabas\rezolvam.Application\bin\Debug\net8.0\rezolvam.Application.pdb
+C:\Users\admin\source\repos\karabas\rezolvam.Application\bin\Debug\net8.0\rezolvam.Domain.dll
+C:\Users\admin\source\repos\karabas\rezolvam.Application\bin\Debug\net8.0\rezolvam.Domain.pdb
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\rezolvam.Application.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\rezolvam.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\rezolvam.Application.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\rezolvam.Application.AssemblyInfo.cs
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\rezolvam.Application.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\rezolvam.0813FC0F.Up2Date
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\rezolvam.Application.dll
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\refint\rezolvam.Application.dll
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\rezolvam.Application.pdb
+C:\Users\admin\source\repos\karabas\rezolvam.Application\obj\Debug\net8.0\ref\rezolvam.Application.dll
