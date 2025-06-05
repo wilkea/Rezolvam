@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AdminMVC\AdminMVC.csproj" />
     <ProjectReference Include="..\rezolvam.Application\rezolvam.Application.csproj" />
     <ProjectReference Include="..\rezolvam.Infrastructure\rezolvam.Infrastructure.csproj" />
   </ItemGroup>

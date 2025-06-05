@@ -1,10 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using rezolvam.Application.Commands.CreateReport;
-using rezolvam.Application.Commands.DeleteReport;
-using rezolvam.Application.Commands.UpdateReport;
-using rezolvam.Application.Commands.UpdateReportStatus;
-using rezolvam.Application.Queries;
+using rezolvam.Application.Report.Commands;
+using rezolvam.Application.Report.Queries;
 
 namespace rezolvam.Api.Controllers
 {
@@ -22,7 +19,7 @@ namespace rezolvam.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var reports = await _mediator.Send(new ReportQuery());
+            var reports = await _mediator.Send(new GetAllReportsQuery());
             return Ok(reports);
         }
 

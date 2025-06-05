@@ -14,7 +14,7 @@ namespace rezolvam.Application.MappingProfiles
     {
         public ReportMappingProfile() 
         {
-            CreateMap<Report, ReportDto>()
+            CreateMap<Domain.Reports.Report, ReportDto>()
                 .ForMember(dest =>dest.Status , opt =>opt.MapFrom(src => src.Status.ToString()));
         }
     }

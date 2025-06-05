@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using rezolvam.Domain.Reports.Interfaces;
 using rezolvam.Domain.Reports;
 using Microsoft.EntityFrameworkCore;
+using rezolvam.Application.Common;
 
 namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
 {
@@ -45,5 +46,22 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
         {
             return await _context.Reports.ToListAsync();
         }
+        public async Task<(IReadOnlyList<Report> Items, int TotalCount, int PageIndex, int PageSize)> GetPagedAsync(int pageIndex, int pageSize, string? searchTerm)
+        {
+            var query = _context.Reports.AsQueryable();
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                query = query.Where(r => r.Title.Contains(searchTerm) || r.Description.Contains(searchTerm));
+            }
+
+            var totalCount = await query.CountAsync();
+            var items = await query
+                .Skip((pageIndex - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return (items.AsReadOnly(), totalCount, pageIndex, pageSize);
+        }
+        
     }
 }

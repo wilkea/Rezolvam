@@ -1,0 +1,100 @@
+/* _content/AdminMVC/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-1koh86ot2a] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-1koh86ot2a] {
+  color: #0077cc;
+}
+
+.btn-primary[b-1koh86ot2a] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-1koh86ot2a],
+.nav-pills .show>.nav-link[b-1koh86ot2a] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-1koh86ot2a] {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom[b-1koh86ot2a] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-1koh86ot2a] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-1koh86ot2a] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-1koh86ot2a] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+table.table[b-1koh86ot2a] {
+  table-layout: fixed;
+  /* face să respecte lățimile setate */
+  width: 100%;
+  /* să ocupe tot spațiul containerului */
+}
+
+table.table th[b-1koh86ot2a],
+table.table td[b-1koh86ot2a] {
+  overflow: hidden;
+  /* ascunde conținutul ce depășește */
+  text-overflow: ellipsis;
+  /* pune ... când e prea lung */
+  white-space: nowrap;
+  /* nu face wrap pe mai multe linii */
+}
+
+/* Setează lățimi fixe coloanelor (ajustează după nevoie) */
+th:nth-child(1)[b-1koh86ot2a],
+td:nth-child(1)[b-1koh86ot2a] {
+  width: 20%;
+}
+
+/* Title */
+th:nth-child(2)[b-1koh86ot2a],
+td:nth-child(2)[b-1koh86ot2a] {
+  width: 30%;
+}
+
+/* Description */
+th:nth-child(3)[b-1koh86ot2a],
+td:nth-child(3)[b-1koh86ot2a] {
+  width: 10%;
+}
+
+/* Status */
+th:nth-child(4)[b-1koh86ot2a],
+td:nth-child(4)[b-1koh86ot2a] {
+  width: 20%;
+}
+
+/* Photo */
+th:nth-child(5)[b-1koh86ot2a],
+td:nth-child(5)[b-1koh86ot2a] {
+  width: 20%;
+}
+
+/* Actions */
