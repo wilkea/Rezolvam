@@ -3,14 +3,12 @@ using rezolvam.Application;
 using rezolvam.Domain.Common;
 using rezolvam.Infrastructure;
 using Rezolvam.Infrastructure.Mapping;
-using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApplicationLayer();
 builder.Services.AddInfrastructureLayer(builder.Configuration);
 builder.Services.AddControllersWithViews();
-builder.Services.AddAutoMapper(typeof(ReportMappingProfile).Assembly);
 
 
 var app = builder.Build();
@@ -41,7 +39,7 @@ using (var scope = app.Services.CreateScope())
     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
     var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
 
-    string[] roles = new[] { "User", "Admin" };
+    string[] roles = new[] { "User", "Admin", "Helper" };
 
     // Crează rolurile dacă nu există
     foreach (var role in roles)

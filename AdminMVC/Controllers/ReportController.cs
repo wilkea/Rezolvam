@@ -3,9 +3,11 @@ using System.Security.Claims;
 using AdminMVC.Models;
 using AdminMVC.ViewModel.Common;
 using AdminMVC.ViewModel.Reports;
-using AutoMapper;
+using AdminMVC.Controllers.Helpers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 using rezolvam.Application.Commands.Report;
 using rezolvam.Application.DTOs;
 using rezolvam.Application.DTOs.Common;
@@ -17,13 +19,13 @@ namespace AdminMVC.Controllers
     {
         private readonly ILogger<ReportController> _logger;
         private readonly IMediator _mediator;
-        private readonly IMapper _mapper;
+        private readonly IWebHostEnvironment _env;
 
-        public ReportController(ILogger<ReportController> logger, IMediator mediator, IMapper mapper)
+        public ReportController(ILogger<ReportController> logger, IMediator mediator, IWebHostEnvironment env)
         {
             _mediator = mediator;
             _logger = logger;
-            _mapper = mapper;
+            _env = env;
         }
         public async Task<IActionResult> Index([FromQuery] PaginationRequest pagination)
         {
@@ -41,16 +43,7 @@ namespace AdminMVC.Controllers
                     }
                 };
                 var dtoResult = await _mediator.Send(query);
-                var pagedResult = new PagedViewModel<ReportViewModel>
-                {
-                    Items = dtoResult.Items.Select(r => _mapper.Map<ReportViewModel>(r)).ToList(),
-                    TotalCount = dtoResult.TotalCount,
-                    PageIndex = dtoResult.PageIndex,
-                    PageSize = dtoResult.PageSize,
-                    TotalPages = dtoResult.TotalPages,
-                    HasPreviousPage = dtoResult.HasPreviousPage,
-                    HasNextPage = dtoResult.HasNextPage
-                };
+                var pagedResult = dtoResult.ToViewModel();
                 ViewBag.AvailableStatuses = new[] { "Open", "InProgress", "Resolved" }; // Only show relevant statuses to public
 
 
@@ -73,10 +66,28 @@ namespace AdminMVC.Controllers
             }
         }
         [HttpGet("Details/{id:guid}")]
-        public IActionResult Details(Guid id)
+        public async Task<IActionResult> Details(Guid id)
         {
-            // This action would typically return a view with details of a specific report.
-            return View(id);
+            try
+            {
+                var query = new GetReportByIdQuery
+                {
+                    ReportId = id,
+                    UserId = User.Identity?.IsAuthenticated == true ? GetCurrentUserId() : Guid.Empty,
+                    IsAdmin = User.IsInRole("Admin")
+                };
+
+                var dto = await _mediator.Send(query);
+                if (dto == null) return NotFound();
+
+                var model = dto.ToDetailViewModel();
+                return View(model);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error loading report details");
+                return RedirectToAction("Index");
+            }
         }
 
         [HttpGet("Create")]
@@ -95,8 +106,30 @@ namespace AdminMVC.Controllers
 
             try
             {
-                var command = _mapper.Map<CreateReportCommand>(model);
-                command.UserId = GetCurrentUserId(); // Use current user ID or default for anonymous
+                if (!model.ArePhotosValid(out var photoError))
+                {
+                    ModelState.AddModelError("Photos", photoError);
+                    return View(model);
+                }
+
+                var uploadDir = Path.Combine(_env.WebRootPath, "uploads");
+                if (!Directory.Exists(uploadDir))
+                    Directory.CreateDirectory(uploadDir);
+
+                var photoUrls = new List<string>();
+                foreach (var photo in model.Photos)
+                {
+                    var fileName = $"{Guid.NewGuid()}{Path.GetExtension(photo.FileName)}";
+                    var filePath = Path.Combine(uploadDir, fileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await photo.CopyToAsync(stream);
+                    }
+                    photoUrls.Add($"/uploads/{fileName}");
+                }
+
+                var command = model.ToCommand(photoUrls);
+                command.UserId = GetCurrentUserId();
 
                 await _mediator.Send(command);
 

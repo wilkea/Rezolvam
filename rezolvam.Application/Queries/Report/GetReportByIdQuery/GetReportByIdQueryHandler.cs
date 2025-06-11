@@ -1,4 +1,3 @@
-﻿using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
 using rezolvam.Application.DTOs;

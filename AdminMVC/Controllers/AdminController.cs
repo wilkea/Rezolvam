@@ -2,7 +2,7 @@ using System.Security.Claims;
 using AdminMVC.ViewModel;
 using AdminMVC.ViewModel.Common;
 using AdminMVC.ViewModel.Reports;
-using AutoMapper;
+using AdminMVC.Controllers.Helpers;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -19,14 +19,12 @@ namespace AdminMVC.Controllers
     public class AdminController : Controller
     {
         private readonly IMediator _mediator;
-        private readonly IMapper _mapper;
         private readonly ILogger<AdminController> _logger;
-        public AdminController(IMediator mediator, IMapper mapper, ILogger<AdminController> logger)
+
+        public AdminController(IMediator mediator, ILogger<AdminController> logger)
         {
-            _mapper = mapper;
             _mediator = mediator;
             _logger = logger;
-
         }
 
         [HttpGet("Index")]
@@ -46,16 +44,7 @@ namespace AdminMVC.Controllers
                 ViewBag.CurrentStatus = query.Status;
                 ViewBag.AvailableStatuses = Enum.GetValues<ReportStatus>().Select(s => s.ToString()).ToList();
 
-                var pagedResult = new PagedViewModel<ReportViewModel>
-                {
-                    Items = dtoResult.Items.Select(r => _mapper.Map<ReportViewModel>(r)).ToList(),
-                    TotalCount = dtoResult.TotalCount,
-                    PageIndex = dtoResult.PageIndex,
-                    PageSize = dtoResult.PageSize,
-                    TotalPages = dtoResult.TotalPages,
-                    HasPreviousPage = dtoResult.HasPreviousPage,
-                    HasNextPage = dtoResult.HasNextPage
-                };
+                var pagedResult = dtoResult.ToViewModel();
                 return View(pagedResult);
             }
             catch (Exception ex)

@@ -1,0 +1,30 @@
+@model IEnumerable<rezolvam.Domain.Common.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Helpers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between mb-3">
+        <h2>Helpers</h2>
+        <a asp-action="Create" class="btn btn-primary">Add Helper</a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Full Name</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var h in Model)
+        {
+            <tr>
+                <td>@h.Email</td>
+                <td>@h.FullName</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

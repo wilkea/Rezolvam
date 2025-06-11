@@ -1,0 +1,32 @@
+@model ReportDetailViewModel
+
+@{
+    ViewData["Title"] = "Report Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>@Model.Title</h2>
+    <p>@Model.Description</p>
+    <p>Status: <span class="badge @Model.StatusCssClass">@Model.StatusDisplayName</span></p>
+    <p>Location: @Model.Location</p>
+
+    <div class="row mb-3">
+        @foreach (var photo in Model.Photos)
+        {
+            <div class="col-md-3 mb-2">
+                <img src="@photo.PhotoUrl" class="img-fluid rounded" />
+            </div>
+        }
+    </div>
+
+    <h4>Comments</h4>
+    <ul class="list-group">
+        @foreach (var c in Model.Comments)
+        {
+            <li class="list-group-item">
+                <strong>@c.TypeDisplayName:</strong> @c.Message
+            </li>
+        }
+    </ul>
+</div>

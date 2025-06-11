@@ -6,6 +6,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using rezolvam.Domain.Common;
 using Rezolvam.Application.Interfaces;
+using MediatR;
+using rezolvam.Application.Queries.Report;
+using AdminMVC.Controllers.Helpers;
+using rezolvam.Application.DTOs.Common;
 
 namespace rezolvam.AdminMVC.Controllers.Auth
 {
@@ -13,11 +17,13 @@ namespace rezolvam.AdminMVC.Controllers.Auth
     {
         private readonly IAuthService _authService;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IMediator _mediator;
 
-        public AuthController(IAuthService authService, UserManager<ApplicationUser> userManager)
+        public AuthController(IAuthService authService, UserManager<ApplicationUser> userManager, IMediator mediator)
         {
             _authService = authService;
             _userManager = userManager;
+            _mediator = mediator;
         }
 
         [HttpGet]
@@ -77,20 +83,44 @@ namespace rezolvam.AdminMVC.Controllers.Auth
 
         [Authorize]
         [HttpGet]
-        public async Task<IActionResult> Profile()
+        public async Task<IActionResult> Profile(int pageIndex = 0)
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null) return NotFound();
 
             var roles = await _userManager.GetRolesAsync(user);
+
+            var reportsQuery = new GetReportsForUserQuery
+            {
+                UserId = Guid.Parse(user.Id),
+                IsAdmin = roles.Contains("Admin"),
+                Request = new PaginationRequest { PageIndex = pageIndex, PageSize = 10 }
+            };
+            var result = await _mediator.Send(reportsQuery);
+
             var model = new ProfileViewModel
             {
-                Email = user.Email ?? "",
-                FullName = user.FullName ?? "",
-                Roles = roles.ToList()
+                Email = user.Email ?? string.Empty,
+                FullName = user.FullName ?? string.Empty,
+                Roles = roles.ToList(),
+                Reports = result.ToViewModel()
             };
 
             return View(model);
+        }
+
+        [Authorize]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateProfile(ProfileViewModel model)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return NotFound();
+
+            user.FullName = model.FullName;
+            await _userManager.UpdateAsync(user);
+
+            return RedirectToAction(nameof(Profile));
         }
 
         [Authorize]
