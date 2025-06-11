@@ -119,7 +119,8 @@ namespace AdminMVC.Controllers
                     .Select(s => new { Value = (int)s, Text = s.ToString() })
                     .ToList();
 
-                return View(reportDetailDto);
+                var viewModel = reportDetailDto.ToDetailViewModel();
+                return View(viewModel);
             }
             catch (Exception ex)
             {
