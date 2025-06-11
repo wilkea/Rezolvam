@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using AutoMapper;
-using rezolvam.Application.MappingProfiles;
+using rezolvam.Application.Services.Helpers;
 
 namespace rezolvam.Application
 
@@ -14,8 +14,8 @@ namespace rezolvam.Application
             {
                 configuration.RegisterServicesFromAssembly(typeof(ApplicationServiceCollectionExtentions).Assembly);
             });
-            services.AddAutoMapper(typeof(ReportMappingProfile));
-            
+
+            services.AddScoped<IReportServiceHelper, ReportServiceHelper>();
             return services;
         }
         

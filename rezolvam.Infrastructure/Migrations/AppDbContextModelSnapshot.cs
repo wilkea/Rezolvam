@@ -229,24 +229,32 @@ namespace rezolvam.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("PhotoUrl")
+                    b.Property<string>("Location")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid>("SubmitedById")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -302,6 +310,121 @@ namespace rezolvam.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("rezolvam.Domain.Reports.Report", b =>
+                {
+                    b.OwnsMany("rezolvam.Domain.Report.StatusChanges.StatusChange", "StatusHistory", b1 =>
+                        {
+                            b1.Property<Guid>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<DateTime>("ChangedAt")
+                                .HasColumnType("datetime2");
+
+                            b1.Property<string>("ChangedBy")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.Property<string>("Reason")
+                                .IsRequired()
+                                .HasMaxLength(1000)
+                                .HasColumnType("nvarchar(1000)");
+
+                            b1.Property<Guid>("ReportId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<int>("Status")
+                                .HasColumnType("int");
+
+                            b1.HasKey("Id");
+
+                            b1.HasIndex("ReportId");
+
+                            b1.ToTable("ReportStatusChanges", (string)null);
+
+                            b1.WithOwner()
+                                .HasForeignKey("ReportId");
+                        });
+
+                    b.OwnsMany("rezolvam.Domain.ReportComments.ReportComment", "Comments", b1 =>
+                        {
+                            b1.Property<Guid>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<Guid>("AuthorId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<DateTime>("CreatedAt")
+                                .HasColumnType("datetime2");
+
+                            b1.Property<bool>("IsVisible")
+                                .HasColumnType("bit");
+
+                            b1.Property<string>("Message")
+                                .IsRequired()
+                                .HasMaxLength(2000)
+                                .HasColumnType("nvarchar(2000)");
+
+                            b1.Property<Guid>("ReportId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("Type")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
+
+                            b1.HasKey("Id");
+
+                            b1.HasIndex("ReportId");
+
+                            b1.ToTable("ReportComments", (string)null);
+
+                            b1.WithOwner()
+                                .HasForeignKey("ReportId");
+                        });
+
+                    b.OwnsMany("rezolvam.Domain.ReportPhotos.ReportPhoto", "Photos", b1 =>
+                        {
+                            b1.Property<Guid>("Id")
+                                .ValueGeneratedOnAdd()
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<string>("FileName")
+                                .IsRequired()
+                                .HasMaxLength(255)
+                                .HasColumnType("nvarchar(255)");
+
+                            b1.Property<long?>("FileSize")
+                                .HasColumnType("bigint");
+
+                            b1.Property<string>("PhotoUrl")
+                                .IsRequired()
+                                .HasMaxLength(1000)
+                                .HasColumnType("nvarchar(1000)");
+
+                            b1.Property<Guid>("ReportId")
+                                .HasColumnType("uniqueidentifier");
+
+                            b1.Property<DateTime>("UploadedAt")
+                                .HasColumnType("datetime2");
+
+                            b1.HasKey("Id");
+
+                            b1.HasIndex("ReportId");
+
+                            b1.ToTable("ReportPhotos", (string)null);
+
+                            b1.WithOwner()
+                                .HasForeignKey("ReportId");
+                        });
+
+                    b.Navigation("Comments");
+
+                    b.Navigation("Photos");
+
+                    b.Navigation("StatusHistory");
                 });
 #pragma warning restore 612, 618
         }

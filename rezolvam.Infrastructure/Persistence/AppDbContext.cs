@@ -9,6 +9,9 @@ using rezolvam.Application.Interfaces;
 using rezolvam.Domain.Reports;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using rezolvam.Domain.Common;
+using rezolvam.Domain.ReportComments;
+using rezolvam.Domain.ReportPhotos;
+using rezolvam.Domain.Report.StatusChanges;
 
 namespace rezolvam.Infrastructure.Persistence
 {
@@ -18,6 +21,9 @@ namespace rezolvam.Infrastructure.Persistence
             : base(options) { }
 
         public DbSet<Report> Reports { get; set; }
+        public DbSet<ReportPhoto> ReportPhotos { get; set; }
+        public DbSet<ReportComment> ReportComments { get; set; }
+        public DbSet<StatusChange> StatusChanges { get; set; }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -26,4 +32,6 @@ namespace rezolvam.Infrastructure.Persistence
             base.OnModelCreating(modelBuilder);
         } 
     }
+
+    
 }

@@ -1,11 +1,10 @@
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using AdminMVC.ViewModel.Auth;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+using rezolvam.Domain.Common;
 using Rezolvam.Application.Interfaces;
 
 namespace rezolvam.AdminMVC.Controllers.Auth
@@ -13,10 +12,12 @@ namespace rezolvam.AdminMVC.Controllers.Auth
     public class AuthController : Controller
     {
         private readonly IAuthService _authService;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public AuthController(IAuthService authService)
+        public AuthController(IAuthService authService, UserManager<ApplicationUser> userManager)
         {
             _authService = authService;
+            _userManager = userManager;
         }
 
         [HttpGet]
@@ -26,25 +27,26 @@ namespace rezolvam.AdminMVC.Controllers.Auth
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            var token = await _authService.LoginAsync(model.Email, model.Password);
-            if (token == null)
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var result = await _authService.LoginAsync(model.Email, model.Password);
+            if (!result.Succeeded)
             {
-                ModelState.AddModelError("", "Invalid login.");
+                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                 return View(model);
             }
 
-            var handler = new JwtSecurityTokenHandler();
-            var jwtToken = handler.ReadJwtToken(token);
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+                return Unauthorized();
 
-            var claims = jwtToken.Claims;
-            // Use Identity's application scheme instead of "Cookies"
-            var identity = new ClaimsIdentity(claims, IdentityConstants.ApplicationScheme);
-            var principal = new ClaimsPrincipal(identity);
-
-            // Sign in with Identity's scheme
-            await HttpContext.SignInAsync(IdentityConstants.ApplicationScheme, principal);
+            // Semnezi userul în cu schema de Identity (cookies)
+            await HttpContext.SignInAsync(IdentityConstants.ApplicationScheme,
+                new ClaimsPrincipal(await _authService.CreateIdentityAsync(user)));
 
             return RedirectToAction("Profile");
         }
@@ -56,6 +58,7 @@ namespace rezolvam.AdminMVC.Controllers.Auth
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (!ModelState.IsValid)
@@ -65,9 +68,7 @@ namespace rezolvam.AdminMVC.Controllers.Auth
             if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
-                {
                     ModelState.AddModelError(string.Empty, error.Description);
-                }
                 return View(model);
             }
 
@@ -76,16 +77,19 @@ namespace rezolvam.AdminMVC.Controllers.Auth
 
         [Authorize]
         [HttpGet]
-        public IActionResult Profile()
+        public async Task<IActionResult> Profile()
         {
-            var user = User;
-            var roles = user.FindAll(ClaimTypes.Role).Select(r => r.Value).ToList();
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return NotFound();
+
+            var roles = await _userManager.GetRolesAsync(user);
             var model = new ProfileViewModel
             {
-                Email = user.FindFirst(ClaimTypes.Email)?.Value ?? "",
-                FullName = user.Identity?.Name ?? "",
-                Roles = roles
+                Email = user.Email ?? "",
+                FullName = user.FullName ?? "",
+                Roles = roles.ToList()
             };
+
             return View(model);
         }
 
@@ -94,11 +98,10 @@ namespace rezolvam.AdminMVC.Controllers.Auth
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
-            // Sign out using Identity's scheme
             await HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
             return RedirectToAction("Login");
         }
-    }
 
-    
+        
+    }
 }

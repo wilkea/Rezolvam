@@ -72,9 +72,15 @@
                                 asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item"></li>
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Report"
-                            asp-action="Index">AdminPanel</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Report"
+                                asp-action="Index">Reports</a>
                         </li>
+                        @if(User.IsInRole("Admin")){
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Admin"
+                                asp-action="Index">AdminPanel</a>
+                        </li>
+                        }
                     </ul>
                 </div>
             </div>

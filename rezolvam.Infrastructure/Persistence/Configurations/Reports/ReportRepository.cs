@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using rezolvam.Domain.Reports.Interfaces;
 using rezolvam.Domain.Reports;
 using Microsoft.EntityFrameworkCore;
-using rezolvam.Application.Common;
+using rezolvam.Domain.Reports.StatusChanges.Enums;
 
 namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
 {
@@ -23,18 +23,21 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
         {
             await _context.Reports.AddAsync(report);
         }
-        public Task DeleteAsync(Guid id)
+        public async Task DeleteAsync(Guid id)
         {
             var report = _context.Reports.FirstOrDefaultAsync(r => r.Id == id).Result;
             if (report != null)
             {
                 _context.Reports.Remove(report);
             }
-            return Task.CompletedTask;
         }
-        public async Task<Report> GetByIdAsync(Guid id)
+        public async Task<Report?> GetByIdAsync(Guid id)
         {
-            return await _context.Reports.FirstOrDefaultAsync(r => r.Id == id) ??
+            return await _context.Reports
+            .Include(r => r.Photos)
+            .Include(p => p.Comments)
+            .Include(p => p.StatusHistory)
+            .FirstOrDefaultAsync(r => r.Id == id) ??
                    throw new ArgumentNullException(nameof(id), "Report not found");
         }
         public Task UpdateAsync(Report report)
@@ -42,26 +45,69 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
             _context.Reports.Update(report);
             return Task.CompletedTask;
         }
-        public async Task<List<Report>> GetAllAsync()
+        public async Task<IEnumerable<Report>> GetAllAsync()
         {
-            return await _context.Reports.ToListAsync();
+            return await _context.Reports
+                .Include(r => r.Photos)
+                .Include(r => r.Comments)
+                .Include(r => r.StatusHistory)
+                .ToListAsync();
         }
-        public async Task<(IReadOnlyList<Report> Items, int TotalCount, int PageIndex, int PageSize)> GetPagedAsync(int pageIndex, int pageSize, string? searchTerm)
+        public async Task<(IReadOnlyList<Report> Items, int TotalCount, int PageIndex, int PageSize)> GetPagedAsync(
+            int pageIndex,
+            int pageSize,
+            string? searchTerm = null,
+            ReportStatus? statusFilter = null,
+            Guid? submitterId = null)
         {
-            var query = _context.Reports.AsQueryable();
-            if (!string.IsNullOrEmpty(searchTerm))
+            int offset = (pageIndex - 1) * pageSize;
+            if (offset < 0) offset = 0;
+
+
+            var query = _context.Reports
+            .Include(r => r.Photos)
+            .Include(r => r.Comments)
+            .Include(r => r.StatusHistory)
+            .AsQueryable();
+
+
+            if (!string.IsNullOrWhiteSpace(searchTerm))
             {
-                query = query.Where(r => r.Title.Contains(searchTerm) || r.Description.Contains(searchTerm));
+                query = query.Where(r =>
+                    r.Title.Contains(searchTerm) ||
+                    r.Description.Contains(searchTerm) ||
+                    r.Location.Contains(searchTerm));
+            }
+
+            if (statusFilter.HasValue)
+            {
+                query = query.Where(r => r.Status == statusFilter.Value);
+            }
+
+            if (submitterId.HasValue)
+            {
+                query = query.Where(r => r.SubmitedById == submitterId.Value);
             }
 
             var totalCount = await query.CountAsync();
+
             var items = await query
-                .Skip((pageIndex - 1) * pageSize)
+                .OrderByDescending(r => r.CreatedAt)
+                .Skip(offset)
                 .Take(pageSize)
                 .ToListAsync();
 
             return (items.AsReadOnly(), totalCount, pageIndex, pageSize);
         }
-        
+        public async Task<bool> ExistsAsync(Guid id)
+        {
+            return await _context.Reports.AnyAsync(r => r.Id == id);
+        }
+
+        public async Task<int> GetUserReportCountAsync(Guid userId)
+        {
+            return await _context.Reports
+                .CountAsync(r => r.SubmitedById == userId);
+        }
     }
 }

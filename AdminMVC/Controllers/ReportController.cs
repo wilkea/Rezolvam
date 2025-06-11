@@ -1,89 +1,127 @@
-using AdminMVC.ViewModel;
+using System.Diagnostics;
+using System.Security.Claims;
+using AdminMVC.Models;
+using AdminMVC.ViewModel.Common;
+using AdminMVC.ViewModel.Reports;
 using AutoMapper;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using rezolvam.Application.Report.Commands;
-using rezolvam.Application.Report.Queries;
-
+using rezolvam.Application.Commands.Report;
+using rezolvam.Application.DTOs;
+using rezolvam.Application.DTOs.Common;
+using rezolvam.Application.Queries.Report;
 
 namespace AdminMVC.Controllers
 {
-    [Authorize(Roles = "admin")]
     public class ReportController : Controller
     {
+        private readonly ILogger<ReportController> _logger;
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
 
-        public ReportController(IMediator mediator, IMapper mapper)
+        public ReportController(ILogger<ReportController> logger, IMediator mediator, IMapper mapper)
         {
-            _mapper = mapper;
             _mediator = mediator;
-
+            _logger = logger;
+            _mapper = mapper;
         }
-        public async Task<IActionResult> Index(GetReportsPagedQuery query)
+        public async Task<IActionResult> Index([FromQuery] PaginationRequest pagination)
         {
-            Console.WriteLine("Handler intrat");
-            var reports = await _mediator.Send(query);
-            return View(reports);
+            try
+            {
+                var query = new GetPublicReportsQuery
+                {
+                    Request = new PaginationRequest
+                    {
+                        PageIndex = pagination.ValidatedPageIndex,
+                        PageSize = pagination.ValidatedPageSize,
+                        SearchTerm = pagination.SearchTerm,
+                        StatusFilter = pagination.StatusFilter,
+                        SubmitterId = pagination.SubmitterId
+                    }
+                };
+                var dtoResult = await _mediator.Send(query);
+                var pagedResult = new PagedViewModel<ReportViewModel>
+                {
+                    Items = dtoResult.Items.Select(r => _mapper.Map<ReportViewModel>(r)).ToList(),
+                    TotalCount = dtoResult.TotalCount,
+                    PageIndex = dtoResult.PageIndex,
+                    PageSize = dtoResult.PageSize,
+                    TotalPages = dtoResult.TotalPages,
+                    HasPreviousPage = dtoResult.HasPreviousPage,
+                    HasNextPage = dtoResult.HasNextPage
+                };
+                ViewBag.AvailableStatuses = new[] { "Open", "InProgress", "Resolved" }; // Only show relevant statuses to public
+
+
+                return View(pagedResult);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error loading public reports index");
+                TempData["Error"] = "Error loading reports. Please try again.";
+                return View(new PagedViewModel<ReportViewModel>
+                {
+                    Items = new List<ReportViewModel>(),
+                    TotalCount = 0,
+                    PageIndex = pagination.PageIndex,
+                    PageSize = pagination.PageSize,
+                    TotalPages = 0,
+                    HasPreviousPage = false,
+                    HasNextPage = false
+                });
+            }
+        }
+        [HttpGet("Details/{id:guid}")]
+        public IActionResult Details(Guid id)
+        {
+            // This action would typically return a view with details of a specific report.
+            return View(id);
         }
 
-        [HttpGet]
+        [HttpGet("Create")]
         public IActionResult Create()
         {
-            return View(new ReportViewModel());
+            return View();
         }
-
-        [HttpPost]
+        [HttpPost("Create")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([FromForm] ReportViewModel model)
+        public async Task<IActionResult> Create([FromForm] CreateReportViewModel model)
         {
-            // Check if we're getting the data
-            if (model == null)
+            if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("", "Model is null");
-                return View(new ReportViewModel());
+                return View(model);
             }
 
-            // If model validation passes, proceed with creation
-            if (ModelState.IsValid)
+            try
             {
-                try
-                {
-                    var command = new CreateReportCommand
-                    {
-                        Title = model.Title ?? string.Empty,
-                        Description = model.Description ?? string.Empty,
-                        PhotoUrl = model.PhotoUrl ?? string.Empty
-                    };
+                var command = _mapper.Map<CreateReportCommand>(model);
+                command.UserId = GetCurrentUserId(); // Use current user ID or default for anonymous
 
-                    var id = await _mediator.Send(command);
-                    TempData["SuccessMessage"] = "Report created successfully!";
-                    return RedirectToAction(nameof(Index));
-                }
-                catch (Exception ex)
-                {
-                    ModelState.AddModelError("", $"Error creating report: {ex.Message}");
-                    return View(model);
-                }
+                await _mediator.Send(command);
+
+                TempData["Success"] = "Report created successfully!";
+                return RedirectToAction("Index");
             }
-
-            // If we get here, something failed, redisplay form
-            return View(model);
-
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error creating report");
+                ModelState.AddModelError(string.Empty, "An error occurred while creating the report. Please try again.");
+                return View(model);
+            }
         }
 
-
-        [HttpPost("Details/{id:guid}")]
-        public async Task<IActionResult> Details(Guid id)
+        [Route("Error")]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
         {
-            var report = await _mediator.Send(new GetReportDetailsQuery { Id = id });
-            if (report == null)
-            {
-                return NotFound();
-            }
-            var model = _mapper.Map<ReportViewModel>(report);
-            return View(model);
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        private Guid GetCurrentUserId()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return Guid.TryParse(userId, out var guid) ? guid : throw new UnauthorizedAccessException("User ID not found.");
+        }
+
     }
 }

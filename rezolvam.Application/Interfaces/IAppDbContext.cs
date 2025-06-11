@@ -10,6 +10,6 @@ namespace rezolvam.Application.Interfaces
 {
     public interface IAppDbContext
     {
-        public DbSet<Domain.Reports.Report> Reports { get; }
+        public DbSet<Report> Reports { get; }
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rezolvam.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01740ee227e8a1eb0afc31b18c79ea5ba3280e03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aadf30715a09e9f2681cd14ec60baa5f59135418")]
 [assembly: System.Reflection.AssemblyProductAttribute("rezolvam.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rezolvam.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

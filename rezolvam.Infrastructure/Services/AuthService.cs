@@ -1,10 +1,5 @@
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Text;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using rezolvam.Application.Auth;
 using rezolvam.Domain.Common;
 using Rezolvam.Application.Interfaces;
 
@@ -14,51 +9,24 @@ namespace rezolvam.Infrastructure.Services
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly JwtSettings _jwtSettings;
 
         public AuthService(UserManager<ApplicationUser> userManager,
-                           SignInManager<ApplicationUser> signInManager,
-                           IOptions<JwtSettings> jwtOptions)
+                           SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _jwtSettings = jwtOptions.Value;
         }
 
-        public async Task<string?> LoginAsync(string email, string password)
+        // Login cu Identity cookie, fără JWT
+        public async Task<SignInResult> LoginAsync(string email, string password, bool rememberMe = false)
         {
             var user = await _userManager.FindByEmailAsync(email);
             if (user == null)
-                return null;
+                return SignInResult.Failed;
 
-            var result = await _signInManager.CheckPasswordSignInAsync(user, password, false);
-            if (!result.Succeeded)
-                return null;
-
-            var claims = new List<Claim>
-        {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Id),
-            new Claim(JwtRegisteredClaimNames.Email, user.Email),
-            new Claim(ClaimTypes.Name, user.UserName)
-        };
-            var roles = await _userManager.GetRolesAsync(user);
-            foreach (var role in roles)
-            {
-                claims.Add(new Claim(ClaimTypes.Role, role));
-            }
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.SecretKey));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var expires = DateTime.UtcNow.AddMinutes(_jwtSettings.ExpiryMinutes);
-
-            var token = new JwtSecurityToken(
-                issuer: _jwtSettings.Issuer,
-                audience: _jwtSettings.Audience,
-                claims: claims,
-                expires: expires,
-                signingCredentials: creds);
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            // Aici setezi direct cookie-ul de Identity (fără token)
+            var result = await _signInManager.PasswordSignInAsync(user, password, rememberMe, lockoutOnFailure: false);
+            return result;
         }
 
         public async Task<IdentityResult> RegisterAsync(string email, string password, string fullName)
@@ -75,9 +43,19 @@ namespace rezolvam.Infrastructure.Services
                 return result;
 
             var roleResult = await _userManager.AddToRoleAsync(user, "user");
-
+            // Dacă adăugarea în rol eșuează, returnezi roleResult, altfel returnezi result-ul de create
             return roleResult.Succeeded ? result : roleResult;
         }
-    }
+        
+        // Logout
+        public async Task LogoutAsync()
+        {
+            await _signInManager.SignOutAsync();
+        }
 
+        public Task<IEnumerable<ClaimsIdentity>> CreateIdentityAsync(object user)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
