@@ -1,13 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using rezolvam.Domain.Reports;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using rezolvam.Domain.Reports;
 using rezolvam.Domain.Report.StatusChanges;
+using rezolvam.Domain.ReportComments;
+using rezolvam.Domain.ReportPhotos;
 
 namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
 {
@@ -18,8 +14,8 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
             builder.ToTable("Reports");
 
             builder.HasKey(r => r.Id);
-            builder.Property(r => r.SubmitedById)
-                    .IsRequired();
+
+            builder.Property(r => r.SubmitedById).IsRequired();
 
             builder.Property(r => r.Title)
                 .IsRequired()
@@ -29,42 +25,40 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
                 .IsRequired()
                 .HasMaxLength(500);
 
+            builder.Property(r => r.Location)
+                .IsRequired()
+                .HasMaxLength(4000);
+
             builder.Property(r => r.Status)
                 .IsRequired()
                 .HasConversion<string>();
-            builder.Property(r => r.CreatedAt)
-                .IsRequired();
 
-            builder.OwnsMany(r => r.Photos, photo =>
-            {
-                photo.WithOwner().HasForeignKey("ReportId");
-                photo.HasKey(p => p.Id); // Explicit key configuration
-                photo.Property(p => p.PhotoUrl).IsRequired().HasMaxLength(1000);
-                photo.Property(p => p.FileName).HasMaxLength(255);
-                photo.Property(p => p.FileSize);
-                photo.Property(p => p.UploadedAt).IsRequired();
-                photo.ToTable("ReportPhotos"); // Separate table for photos
-            });
-            builder.OwnsMany(r => r.Comments, comment =>
-            {
-                comment.WithOwner().HasForeignKey("ReportId");
-                comment.HasKey(c => c.Id); // Explicit key configuration
-                comment.Property(c => c.AuthorId).IsRequired();
-                comment.Property(c => c.Message).IsRequired().HasMaxLength(2000);
-                comment.Property(c => c.Type).HasConversion<string>().IsRequired();
-                comment.Property(c => c.CreatedAt).IsRequired();
-                comment.Property(c => c.IsVisible).IsRequired();
-                comment.ToTable("ReportComments"); // Separate table for comments
-            });
-            builder.OwnsMany(r => r.StatusHistory, statusChange =>
-            {
-                statusChange.WithOwner().HasForeignKey("ReportId");
-                statusChange.HasKey(sc => sc.Id); // Explicit key configuration
-                statusChange.Property(sc => sc.Status).HasConversion<int>().IsRequired();
-                statusChange.Property(sc => sc.ChangedAt).IsRequired();
-                statusChange.Property(sc => sc.Reason).HasMaxLength(1000).IsRequired();
-                statusChange.ToTable("ReportStatusChanges"); // Separate table for status changes
-            });
+            builder.Property(r => r.CreatedAt).IsRequired();
+            builder.Property(r => r.UpdatedAt);
+
+            // Comments configuration
+            builder.HasMany<ReportComment>("_comments")
+                .WithOne()
+                .HasForeignKey("ReportId")
+                .OnDelete(DeleteBehavior.Cascade);
+            builder.Navigation("_comments")
+                .UsePropertyAccessMode(PropertyAccessMode.Field);
+
+            // Photos configuration
+            builder.HasMany<ReportPhoto>("_photos")
+                .WithOne()
+                .HasForeignKey("ReportId")
+                .OnDelete(DeleteBehavior.Cascade);
+            builder.Navigation("_photos")
+                .UsePropertyAccessMode(PropertyAccessMode.PreferFieldDuringConstruction);
+
+            // Status History configuration
+            builder.HasMany<StatusChange>("_statusHistory")
+                .WithOne()
+                .HasForeignKey("ReportId")
+                .OnDelete(DeleteBehavior.Cascade);
+            builder.Navigation("_statusHistory")
+                .UsePropertyAccessMode(PropertyAccessMode.PreferFieldDuringConstruction);
         }
     }
 }

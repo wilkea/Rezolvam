@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using rezolvam.Application.Interfaces;
 
 namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
@@ -16,7 +17,7 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
             return await _dbContext.SaveChangesAsync(cancellationToken);
         }
 
-        
+          public DbContext Context => _dbContext; 
         public void Dispose() => _dbContext.Dispose();
     }
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K5NLmR4yBNbX+rQcTQGhdHgB4OkB5s0/SBIx5w4Lmww=",
+  "Hash": "PY1hdsT4QzxnVw7cr6pZ+pi4uEkO+jMN0cKnf5+gO5g=",
   "Source": "AdminMVC",
   "BasePath": "_content/AdminMVC",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "w87b604ken",
+      "Integrity": "kAD7B9M2hDefvIHUS3vnugX9n+FOMCbo3EfPwYlhZ+A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1317,6 +1317,573 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\34326b61-bbda-43f7-b71b-d368944d1474.jpg",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/34326b61-bbda-43f7-b71b-d368944d1474#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rwgr7z338z",
+      "Integrity": "pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\34326b61-bbda-43f7-b71b-d368944d1474.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\38078bb5-23d7-479e-8299-62136b5a3586.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/38078bb5-23d7-479e-8299-62136b5a3586#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kg1px3bizq",
+      "Integrity": "pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\38078bb5-23d7-479e-8299-62136b5a3586.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\4350c4ee-5c9f-4538-ae77-4379f212622b.jpg",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/4350c4ee-5c9f-4538-ae77-4379f212622b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rwgr7z338z",
+      "Integrity": "pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\4350c4ee-5c9f-4538-ae77-4379f212622b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\43abb04e-7fe1-40c1-a51b-31c09a1f4cac.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/43abb04e-7fe1-40c1-a51b-31c09a1f4cac#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "124owvqn05",
+      "Integrity": "d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\43abb04e-7fe1-40c1-a51b-31c09a1f4cac.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\502198c6-6501-451b-a4b8-c063576e2e6e.gif",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/502198c6-6501-451b-a4b8-c063576e2e6e#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6t64zacljv",
+      "Integrity": "emYd+a1jPfdnt53KcvILyKltklOwz77I8ks0N+K+vmI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\502198c6-6501-451b-a4b8-c063576e2e6e.gif"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\547a8c2e-807b-4115-a1bc-e960df89d8cc.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/547a8c2e-807b-4115-a1bc-e960df89d8cc#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "124owvqn05",
+      "Integrity": "d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\547a8c2e-807b-4115-a1bc-e960df89d8cc.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\561a39d7-2c68-4966-8b70-1e334425c424.jpg",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/561a39d7-2c68-4966-8b70-1e334425c424#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0937pg3qmo",
+      "Integrity": "zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\561a39d7-2c68-4966-8b70-1e334425c424.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\56ed3b0b-df7e-495b-995a-060385b14829.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/56ed3b0b-df7e-495b-995a-060385b14829#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oxva4a1y1o",
+      "Integrity": "LDwNzbxwLeUcrEQX8ariBR+PjIxgR6IsjRXrlmUu4Pg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\56ed3b0b-df7e-495b-995a-060385b14829.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\608294fe-880e-46d0-80ee-be353d005d98.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/608294fe-880e-46d0-80ee-be353d005d98#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kg1px3bizq",
+      "Integrity": "pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\608294fe-880e-46d0-80ee-be353d005d98.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\75c5c23c-5857-42e0-8f5d-1663d089bb29.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/75c5c23c-5857-42e0-8f5d-1663d089bb29#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kg1px3bizq",
+      "Integrity": "pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\75c5c23c-5857-42e0-8f5d-1663d089bb29.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\a0a9b8ac-fd06-4d49-b77b-bbc5f38167c2.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/a0a9b8ac-fd06-4d49-b77b-bbc5f38167c2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "thmy6et75t",
+      "Integrity": "nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\a0a9b8ac-fd06-4d49-b77b-bbc5f38167c2.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\a498304b-ce44-4be7-a278-4fa2c1837a53.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/a498304b-ce44-4be7-a278-4fa2c1837a53#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "thmy6et75t",
+      "Integrity": "nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\a498304b-ce44-4be7-a278-4fa2c1837a53.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\a5276c76-fe8a-472c-9d15-cce45c557bfe.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/a5276c76-fe8a-472c-9d15-cce45c557bfe#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iwjthk35cn",
+      "Integrity": "Avt5ZLQSvtcMJYGDSnpWLLfvh8lJEmChWtbGAixfD/c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\a5276c76-fe8a-472c-9d15-cce45c557bfe.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\aa25f383-b4a7-48b1-8283-67ef246f0649.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/aa25f383-b4a7-48b1-8283-67ef246f0649#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "thmy6et75t",
+      "Integrity": "nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\aa25f383-b4a7-48b1-8283-67ef246f0649.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\ac30e68d-9e0e-4479-9174-e6e4af67eb1b.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/ac30e68d-9e0e-4479-9174-e6e4af67eb1b#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "scahg3yei2",
+      "Integrity": "VBXo+GVqXibMBTnFom2xEN4FMJqjjFkbQ8IH0XsMqdQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\ac30e68d-9e0e-4479-9174-e6e4af67eb1b.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\b1c0b7f6-3774-4a40-a0ba-3d36af12e4f4.jpg",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/b1c0b7f6-3774-4a40-a0ba-3d36af12e4f4#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0937pg3qmo",
+      "Integrity": "zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\b1c0b7f6-3774-4a40-a0ba-3d36af12e4f4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\bad8d7f4-5141-407f-9eb2-b275d0383806.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/bad8d7f4-5141-407f-9eb2-b275d0383806#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "124owvqn05",
+      "Integrity": "d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\bad8d7f4-5141-407f-9eb2-b275d0383806.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\bc9080db-6f2b-43ad-9bfb-af235947d9c0.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/bc9080db-6f2b-43ad-9bfb-af235947d9c0#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kt87yaihlt",
+      "Integrity": "mK2eYWWY6tndO+93zbJDztvrXTbDOnF1NJtmTsfkFzs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\bc9080db-6f2b-43ad-9bfb-af235947d9c0.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c017f083-65b6-4f8d-b979-01d467ce03d2.gif",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/c017f083-65b6-4f8d-b979-01d467ce03d2#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4d4xtz3jz0",
+      "Integrity": "WC1yiXP/PON/3PbiENQNK8GTC+Xutgtvs1DHNltANF4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\c017f083-65b6-4f8d-b979-01d467ce03d2.gif"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c19aab55-9d41-4c02-b49e-a71993feb3e8.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/c19aab55-9d41-4c02-b49e-a71993feb3e8#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "thmy6et75t",
+      "Integrity": "nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\c19aab55-9d41-4c02-b49e-a71993feb3e8.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c215d33f-4f48-4f2e-8c4a-37b4f5f466d8.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/c215d33f-4f48-4f2e-8c4a-37b4f5f466d8#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "thmy6et75t",
+      "Integrity": "nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\c215d33f-4f48-4f2e-8c4a-37b4f5f466d8.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c8f3469f-f0aa-45a6-a6ce-7ab5ca7fa2ce.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/c8f3469f-f0aa-45a6-a6ce-7ab5ca7fa2ce#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "thmy6et75t",
+      "Integrity": "nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\c8f3469f-f0aa-45a6-a6ce-7ab5ca7fa2ce.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\d6a4a389-2503-48e5-9f19-3d786b0709a4.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/d6a4a389-2503-48e5-9f19-3d786b0709a4#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cqm6kywawx",
+      "Integrity": "lJTjhjBsbp0nMsjtpibc3NLV3Zfe5eqpDgpCRAOhV4Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\d6a4a389-2503-48e5-9f19-3d786b0709a4.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\d727fcfe-22cc-4b8c-a14d-850f1e611f7e.jpg",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/d727fcfe-22cc-4b8c-a14d-850f1e611f7e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rwgr7z338z",
+      "Integrity": "pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\d727fcfe-22cc-4b8c-a14d-850f1e611f7e.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\d963f4f6-11df-421a-934d-1c45de31af20.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/d963f4f6-11df-421a-934d-1c45de31af20#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kg1px3bizq",
+      "Integrity": "pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\d963f4f6-11df-421a-934d-1c45de31af20.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\e3e055b9-014c-4551-bfc0-668a88478aa5.jpg",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/e3e055b9-014c-4551-bfc0-668a88478aa5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rwgr7z338z",
+      "Integrity": "pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\e3e055b9-014c-4551-bfc0-668a88478aa5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\f54c95da-c84e-4231-9bf3-6febabbbc966.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/f54c95da-c84e-4231-9bf3-6febabbbc966#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o748sz7hhv",
+      "Integrity": "rIBfJnxi+uWgE1aCjZBtF1HagTjMxiBRlYnTyUXpaVo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\f54c95da-c84e-4231-9bf3-6febabbbc966.png"
     }
   ],
   "Endpoints": [
@@ -1485,51 +2052,6 @@
       ]
     },
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "362"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 07:08:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1540,7 +2062,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "1561"
         },
         {
           "Name": "Content-Type",
@@ -1548,11 +2070,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"kAD7B9M2hDefvIHUS3vnugX9n+FOMCbo3EfPwYlhZ+A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 07:08:10 GMT"
+          "Value": "Wed, 11 Jun 2025 16:00:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1562,7 +2084,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-kAD7B9M2hDefvIHUS3vnugX9n+FOMCbo3EfPwYlhZ+A="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.w87b604ken.css",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1561"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kAD7B9M2hDefvIHUS3vnugX9n+FOMCbo3EfPwYlhZ+A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 16:00:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w87b604ken"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kAD7B9M2hDefvIHUS3vnugX9n+FOMCbo3EfPwYlhZ+A="
         }
       ]
     },
@@ -6401,6 +6968,2220 @@
         {
           "Name": "integrity",
           "Value": "sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/34326b61-bbda-43f7-b71b-d368944d1474.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\34326b61-bbda-43f7-b71b-d368944d1474.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/34326b61-bbda-43f7-b71b-d368944d1474.rwgr7z338z.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\34326b61-bbda-43f7-b71b-d368944d1474.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rwgr7z338z"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/34326b61-bbda-43f7-b71b-d368944d1474.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/38078bb5-23d7-479e-8299-62136b5a3586.kg1px3bizq.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\38078bb5-23d7-479e-8299-62136b5a3586.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4492944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kg1px3bizq"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/38078bb5-23d7-479e-8299-62136b5a3586.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/38078bb5-23d7-479e-8299-62136b5a3586.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\38078bb5-23d7-479e-8299-62136b5a3586.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4492944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/4350c4ee-5c9f-4538-ae77-4379f212622b.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\4350c4ee-5c9f-4538-ae77-4379f212622b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/4350c4ee-5c9f-4538-ae77-4379f212622b.rwgr7z338z.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\4350c4ee-5c9f-4538-ae77-4379f212622b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rwgr7z338z"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/4350c4ee-5c9f-4538-ae77-4379f212622b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/43abb04e-7fe1-40c1-a51b-31c09a1f4cac.124owvqn05.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\43abb04e-7fe1-40c1-a51b-31c09a1f4cac.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2396058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 13:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "124owvqn05"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/43abb04e-7fe1-40c1-a51b-31c09a1f4cac.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/43abb04e-7fe1-40c1-a51b-31c09a1f4cac.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\43abb04e-7fe1-40c1-a51b-31c09a1f4cac.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2396058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 13:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/502198c6-6501-451b-a4b8-c063576e2e6e.6t64zacljv.gif",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\502198c6-6501-451b-a4b8-c063576e2e6e.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2765398"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"emYd+a1jPfdnt53KcvILyKltklOwz77I8ks0N+K+vmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 13:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6t64zacljv"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/502198c6-6501-451b-a4b8-c063576e2e6e.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-emYd+a1jPfdnt53KcvILyKltklOwz77I8ks0N+K+vmI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/502198c6-6501-451b-a4b8-c063576e2e6e.gif",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\502198c6-6501-451b-a4b8-c063576e2e6e.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2765398"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"emYd+a1jPfdnt53KcvILyKltklOwz77I8ks0N+K+vmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 13:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-emYd+a1jPfdnt53KcvILyKltklOwz77I8ks0N+K+vmI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/547a8c2e-807b-4115-a1bc-e960df89d8cc.124owvqn05.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\547a8c2e-807b-4115-a1bc-e960df89d8cc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2396058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:55:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "124owvqn05"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/547a8c2e-807b-4115-a1bc-e960df89d8cc.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/547a8c2e-807b-4115-a1bc-e960df89d8cc.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\547a8c2e-807b-4115-a1bc-e960df89d8cc.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2396058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:55:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/561a39d7-2c68-4966-8b70-1e334425c424.0937pg3qmo.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\561a39d7-2c68-4966-8b70-1e334425c424.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:39:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0937pg3qmo"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/561a39d7-2c68-4966-8b70-1e334425c424.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/561a39d7-2c68-4966-8b70-1e334425c424.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\561a39d7-2c68-4966-8b70-1e334425c424.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 11:39:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/56ed3b0b-df7e-495b-995a-060385b14829.oxva4a1y1o.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\56ed3b0b-df7e-495b-995a-060385b14829.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "947"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LDwNzbxwLeUcrEQX8ariBR+PjIxgR6IsjRXrlmUu4Pg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 11:27:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oxva4a1y1o"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/56ed3b0b-df7e-495b-995a-060385b14829.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LDwNzbxwLeUcrEQX8ariBR+PjIxgR6IsjRXrlmUu4Pg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/56ed3b0b-df7e-495b-995a-060385b14829.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\56ed3b0b-df7e-495b-995a-060385b14829.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "947"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LDwNzbxwLeUcrEQX8ariBR+PjIxgR6IsjRXrlmUu4Pg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 11:27:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LDwNzbxwLeUcrEQX8ariBR+PjIxgR6IsjRXrlmUu4Pg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/608294fe-880e-46d0-80ee-be353d005d98.kg1px3bizq.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\608294fe-880e-46d0-80ee-be353d005d98.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4492944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kg1px3bizq"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/608294fe-880e-46d0-80ee-be353d005d98.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/608294fe-880e-46d0-80ee-be353d005d98.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\608294fe-880e-46d0-80ee-be353d005d98.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4492944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/75c5c23c-5857-42e0-8f5d-1663d089bb29.kg1px3bizq.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\75c5c23c-5857-42e0-8f5d-1663d089bb29.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4492944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kg1px3bizq"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/75c5c23c-5857-42e0-8f5d-1663d089bb29.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/75c5c23c-5857-42e0-8f5d-1663d089bb29.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\75c5c23c-5857-42e0-8f5d-1663d089bb29.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4492944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/a0a9b8ac-fd06-4d49-b77b-bbc5f38167c2.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\a0a9b8ac-fd06-4d49-b77b-bbc5f38167c2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/a0a9b8ac-fd06-4d49-b77b-bbc5f38167c2.thmy6et75t.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\a0a9b8ac-fd06-4d49-b77b-bbc5f38167c2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "thmy6et75t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/a0a9b8ac-fd06-4d49-b77b-bbc5f38167c2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/a498304b-ce44-4be7-a278-4fa2c1837a53.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\a498304b-ce44-4be7-a278-4fa2c1837a53.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/a498304b-ce44-4be7-a278-4fa2c1837a53.thmy6et75t.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\a498304b-ce44-4be7-a278-4fa2c1837a53.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "thmy6et75t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/a498304b-ce44-4be7-a278-4fa2c1837a53.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/a5276c76-fe8a-472c-9d15-cce45c557bfe.iwjthk35cn.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\a5276c76-fe8a-472c-9d15-cce45c557bfe.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3408816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Avt5ZLQSvtcMJYGDSnpWLLfvh8lJEmChWtbGAixfD/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:01:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iwjthk35cn"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/a5276c76-fe8a-472c-9d15-cce45c557bfe.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Avt5ZLQSvtcMJYGDSnpWLLfvh8lJEmChWtbGAixfD/c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/a5276c76-fe8a-472c-9d15-cce45c557bfe.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\a5276c76-fe8a-472c-9d15-cce45c557bfe.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3408816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Avt5ZLQSvtcMJYGDSnpWLLfvh8lJEmChWtbGAixfD/c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:01:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Avt5ZLQSvtcMJYGDSnpWLLfvh8lJEmChWtbGAixfD/c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/aa25f383-b4a7-48b1-8283-67ef246f0649.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\aa25f383-b4a7-48b1-8283-67ef246f0649.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:42:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/aa25f383-b4a7-48b1-8283-67ef246f0649.thmy6et75t.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\aa25f383-b4a7-48b1-8283-67ef246f0649.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:42:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "thmy6et75t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/aa25f383-b4a7-48b1-8283-67ef246f0649.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/ac30e68d-9e0e-4479-9174-e6e4af67eb1b.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\ac30e68d-9e0e-4479-9174-e6e4af67eb1b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2284282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VBXo+GVqXibMBTnFom2xEN4FMJqjjFkbQ8IH0XsMqdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:01:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VBXo+GVqXibMBTnFom2xEN4FMJqjjFkbQ8IH0XsMqdQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/ac30e68d-9e0e-4479-9174-e6e4af67eb1b.scahg3yei2.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\ac30e68d-9e0e-4479-9174-e6e4af67eb1b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2284282"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VBXo+GVqXibMBTnFom2xEN4FMJqjjFkbQ8IH0XsMqdQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:01:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "scahg3yei2"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/ac30e68d-9e0e-4479-9174-e6e4af67eb1b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VBXo+GVqXibMBTnFom2xEN4FMJqjjFkbQ8IH0XsMqdQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/b1c0b7f6-3774-4a40-a0ba-3d36af12e4f4.0937pg3qmo.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\b1c0b7f6-3774-4a40-a0ba-3d36af12e4f4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:04:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0937pg3qmo"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/b1c0b7f6-3774-4a40-a0ba-3d36af12e4f4.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/b1c0b7f6-3774-4a40-a0ba-3d36af12e4f4.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\b1c0b7f6-3774-4a40-a0ba-3d36af12e4f4.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:04:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zEoKzc/QB7DFG9CX3HQL/CPGg6XHl3TmfR5keWrRP0c="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/bad8d7f4-5141-407f-9eb2-b275d0383806.124owvqn05.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\bad8d7f4-5141-407f-9eb2-b275d0383806.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2396058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:55:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "124owvqn05"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/bad8d7f4-5141-407f-9eb2-b275d0383806.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/bad8d7f4-5141-407f-9eb2-b275d0383806.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\bad8d7f4-5141-407f-9eb2-b275d0383806.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2396058"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:55:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d3lt8Wb4woiquxf1LUX5E/JzGkRgSXNrL7N0AI4GLlg="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/bc9080db-6f2b-43ad-9bfb-af235947d9c0.kt87yaihlt.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\bc9080db-6f2b-43ad-9bfb-af235947d9c0.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5089373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mK2eYWWY6tndO+93zbJDztvrXTbDOnF1NJtmTsfkFzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:04:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kt87yaihlt"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/bc9080db-6f2b-43ad-9bfb-af235947d9c0.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mK2eYWWY6tndO+93zbJDztvrXTbDOnF1NJtmTsfkFzs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/bc9080db-6f2b-43ad-9bfb-af235947d9c0.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\bc9080db-6f2b-43ad-9bfb-af235947d9c0.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5089373"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mK2eYWWY6tndO+93zbJDztvrXTbDOnF1NJtmTsfkFzs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:04:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mK2eYWWY6tndO+93zbJDztvrXTbDOnF1NJtmTsfkFzs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/c017f083-65b6-4f8d-b979-01d467ce03d2.4d4xtz3jz0.gif",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c017f083-65b6-4f8d-b979-01d467ce03d2.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2874760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WC1yiXP/PON/3PbiENQNK8GTC+Xutgtvs1DHNltANF4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 11:27:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4d4xtz3jz0"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/c017f083-65b6-4f8d-b979-01d467ce03d2.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WC1yiXP/PON/3PbiENQNK8GTC+Xutgtvs1DHNltANF4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/c017f083-65b6-4f8d-b979-01d467ce03d2.gif",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c017f083-65b6-4f8d-b979-01d467ce03d2.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2874760"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WC1yiXP/PON/3PbiENQNK8GTC+Xutgtvs1DHNltANF4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 11:27:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WC1yiXP/PON/3PbiENQNK8GTC+Xutgtvs1DHNltANF4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/c19aab55-9d41-4c02-b49e-a71993feb3e8.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c19aab55-9d41-4c02-b49e-a71993feb3e8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/c19aab55-9d41-4c02-b49e-a71993feb3e8.thmy6et75t.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c19aab55-9d41-4c02-b49e-a71993feb3e8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "thmy6et75t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/c19aab55-9d41-4c02-b49e-a71993feb3e8.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/c215d33f-4f48-4f2e-8c4a-37b4f5f466d8.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c215d33f-4f48-4f2e-8c4a-37b4f5f466d8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/c215d33f-4f48-4f2e-8c4a-37b4f5f466d8.thmy6et75t.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c215d33f-4f48-4f2e-8c4a-37b4f5f466d8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "thmy6et75t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/c215d33f-4f48-4f2e-8c4a-37b4f5f466d8.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/c8f3469f-f0aa-45a6-a6ce-7ab5ca7fa2ce.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c8f3469f-f0aa-45a6-a6ce-7ab5ca7fa2ce.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 14:25:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/c8f3469f-f0aa-45a6-a6ce-7ab5ca7fa2ce.thmy6et75t.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\c8f3469f-f0aa-45a6-a6ce-7ab5ca7fa2ce.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 14:25:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "thmy6et75t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/c8f3469f-f0aa-45a6-a6ce-7ab5ca7fa2ce.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/d6a4a389-2503-48e5-9f19-3d786b0709a4.cqm6kywawx.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\d6a4a389-2503-48e5-9f19-3d786b0709a4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1548685"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lJTjhjBsbp0nMsjtpibc3NLV3Zfe5eqpDgpCRAOhV4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:42:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cqm6kywawx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/d6a4a389-2503-48e5-9f19-3d786b0709a4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lJTjhjBsbp0nMsjtpibc3NLV3Zfe5eqpDgpCRAOhV4Y="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/d6a4a389-2503-48e5-9f19-3d786b0709a4.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\d6a4a389-2503-48e5-9f19-3d786b0709a4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1548685"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lJTjhjBsbp0nMsjtpibc3NLV3Zfe5eqpDgpCRAOhV4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:42:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lJTjhjBsbp0nMsjtpibc3NLV3Zfe5eqpDgpCRAOhV4Y="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/d727fcfe-22cc-4b8c-a14d-850f1e611f7e.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\d727fcfe-22cc-4b8c-a14d-850f1e611f7e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/d727fcfe-22cc-4b8c-a14d-850f1e611f7e.rwgr7z338z.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\d727fcfe-22cc-4b8c-a14d-850f1e611f7e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rwgr7z338z"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/d727fcfe-22cc-4b8c-a14d-850f1e611f7e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/d963f4f6-11df-421a-934d-1c45de31af20.kg1px3bizq.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\d963f4f6-11df-421a-934d-1c45de31af20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4492944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kg1px3bizq"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/d963f4f6-11df-421a-934d-1c45de31af20.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/d963f4f6-11df-421a-934d-1c45de31af20.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\d963f4f6-11df-421a-934d-1c45de31af20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4492944"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/e3e055b9-014c-4551-bfc0-668a88478aa5.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\e3e055b9-014c-4551-bfc0-668a88478aa5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/e3e055b9-014c-4551-bfc0-668a88478aa5.rwgr7z338z.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\e3e055b9-014c-4551-bfc0-668a88478aa5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rwgr7z338z"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/e3e055b9-014c-4551-bfc0-668a88478aa5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pa7YnbCJXuL/xSfYu/p9bLwI0AXXPsG33F5T9tx1HMY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/f54c95da-c84e-4231-9bf3-6febabbbc966.o748sz7hhv.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\f54c95da-c84e-4231-9bf3-6febabbbc966.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2382319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rIBfJnxi+uWgE1aCjZBtF1HagTjMxiBRlYnTyUXpaVo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:01:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o748sz7hhv"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/f54c95da-c84e-4231-9bf3-6febabbbc966.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rIBfJnxi+uWgE1aCjZBtF1HagTjMxiBRlYnTyUXpaVo="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/f54c95da-c84e-4231-9bf3-6febabbbc966.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\f54c95da-c84e-4231-9bf3-6febabbbc966.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2382319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rIBfJnxi+uWgE1aCjZBtF1HagTjMxiBRlYnTyUXpaVo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 12 Jun 2025 12:01:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rIBfJnxi+uWgE1aCjZBtF1HagTjMxiBRlYnTyUXpaVo="
         }
       ]
     }

@@ -23,9 +23,9 @@ namespace rezolvam.Application.Commands.Report.Handlers
 
             // WHY: Domain method validates status transitions
             // HOW: UpdateStatus checks valid transitions using switch expression
-            report.UpdateStatus(request.NewStatus, request.AdminId, request.Reason);
+            var status = report.UpdateStatus(request.NewStatus, request.AdminId, request.Reason);
 
-            await _reportRepository.UpdateAsync(report);
+            await _reportRepository.TrackNewStatusChange(status);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }

@@ -28,6 +28,9 @@ namespace rezolvam.Infrastructure.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ReportConfiguration());
+            modelBuilder.ApplyConfiguration(new ReportCommentConfiguration());
+            modelBuilder.ApplyConfiguration(new ReportPhotoConfiguration());
+            modelBuilder.ApplyConfiguration(new StatusChangeConfiguration());
 
             base.OnModelCreating(modelBuilder);
         } 

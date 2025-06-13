@@ -223,6 +223,105 @@ namespace rezolvam.Infrastructure.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("rezolvam.Domain.Report.StatusChanges.StatusChange", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("ChangedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ChangedBy")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Reason")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<Guid>("ReportId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReportId");
+
+                    b.ToTable("ReportStatusChanges", (string)null);
+                });
+
+            modelBuilder.Entity("rezolvam.Domain.ReportComments.ReportComment", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("AuthorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<Guid>("ReportId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReportId");
+
+                    b.ToTable("ReportComments", (string)null);
+                });
+
+            modelBuilder.Entity("rezolvam.Domain.ReportPhotos.ReportPhoto", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<long?>("FileSize")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("PhotoUrl")
+                        .IsRequired()
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
+
+                    b.Property<Guid>("ReportId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("UploadedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReportId");
+
+                    b.ToTable("ReportPhotos", (string)null);
+                });
+
             modelBuilder.Entity("rezolvam.Domain.Reports.Report", b =>
                 {
                     b.Property<Guid>("Id")
@@ -239,7 +338,8 @@ namespace rezolvam.Infrastructure.Migrations
 
                     b.Property<string>("Location")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(4000)
+                        .HasColumnType("nvarchar(4000)");
 
                     b.Property<string>("Status")
                         .IsRequired()
@@ -312,114 +412,35 @@ namespace rezolvam.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("rezolvam.Domain.Report.StatusChanges.StatusChange", b =>
+                {
+                    b.HasOne("rezolvam.Domain.Reports.Report", null)
+                        .WithMany("StatusHistory")
+                        .HasForeignKey("ReportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("rezolvam.Domain.ReportComments.ReportComment", b =>
+                {
+                    b.HasOne("rezolvam.Domain.Reports.Report", null)
+                        .WithMany("Comments")
+                        .HasForeignKey("ReportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("rezolvam.Domain.ReportPhotos.ReportPhoto", b =>
+                {
+                    b.HasOne("rezolvam.Domain.Reports.Report", null)
+                        .WithMany("Photos")
+                        .HasForeignKey("ReportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("rezolvam.Domain.Reports.Report", b =>
                 {
-                    b.OwnsMany("rezolvam.Domain.Report.StatusChanges.StatusChange", "StatusHistory", b1 =>
-                        {
-                            b1.Property<Guid>("Id")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<DateTime>("ChangedAt")
-                                .HasColumnType("datetime2");
-
-                            b1.Property<string>("ChangedBy")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.Property<string>("Reason")
-                                .IsRequired()
-                                .HasMaxLength(1000)
-                                .HasColumnType("nvarchar(1000)");
-
-                            b1.Property<Guid>("ReportId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<int>("Status")
-                                .HasColumnType("int");
-
-                            b1.HasKey("Id");
-
-                            b1.HasIndex("ReportId");
-
-                            b1.ToTable("ReportStatusChanges", (string)null);
-
-                            b1.WithOwner()
-                                .HasForeignKey("ReportId");
-                        });
-
-                    b.OwnsMany("rezolvam.Domain.ReportComments.ReportComment", "Comments", b1 =>
-                        {
-                            b1.Property<Guid>("Id")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<Guid>("AuthorId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<DateTime>("CreatedAt")
-                                .HasColumnType("datetime2");
-
-                            b1.Property<bool>("IsVisible")
-                                .HasColumnType("bit");
-
-                            b1.Property<string>("Message")
-                                .IsRequired()
-                                .HasMaxLength(2000)
-                                .HasColumnType("nvarchar(2000)");
-
-                            b1.Property<Guid>("ReportId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<string>("Type")
-                                .IsRequired()
-                                .HasColumnType("nvarchar(max)");
-
-                            b1.HasKey("Id");
-
-                            b1.HasIndex("ReportId");
-
-                            b1.ToTable("ReportComments", (string)null);
-
-                            b1.WithOwner()
-                                .HasForeignKey("ReportId");
-                        });
-
-                    b.OwnsMany("rezolvam.Domain.ReportPhotos.ReportPhoto", "Photos", b1 =>
-                        {
-                            b1.Property<Guid>("Id")
-                                .ValueGeneratedOnAdd()
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<string>("FileName")
-                                .IsRequired()
-                                .HasMaxLength(255)
-                                .HasColumnType("nvarchar(255)");
-
-                            b1.Property<long?>("FileSize")
-                                .HasColumnType("bigint");
-
-                            b1.Property<string>("PhotoUrl")
-                                .IsRequired()
-                                .HasMaxLength(1000)
-                                .HasColumnType("nvarchar(1000)");
-
-                            b1.Property<Guid>("ReportId")
-                                .HasColumnType("uniqueidentifier");
-
-                            b1.Property<DateTime>("UploadedAt")
-                                .HasColumnType("datetime2");
-
-                            b1.HasKey("Id");
-
-                            b1.HasIndex("ReportId");
-
-                            b1.ToTable("ReportPhotos", (string)null);
-
-                            b1.WithOwner()
-                                .HasForeignKey("ReportId");
-                        });
-
                     b.Navigation("Comments");
 
                     b.Navigation("Photos");

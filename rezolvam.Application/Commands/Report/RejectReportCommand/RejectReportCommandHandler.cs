@@ -24,11 +24,10 @@ namespace rezolvam.Application.Commands.Report.Handlers
             if (report == null)
                 throw new KeyNotFoundException($"Report with ID {request.ReportId} not found");
 
-            // WHY: Domain method validates status transition and reason requirement
-            // HOW: RejectReport enforces business rules for rejection
-            report.RejectReport(request.AdminId, request.Reason);
+            
+            var reject = report.RejectReport(request.AdminId, request.Reason);
 
-            await _reportRepository.UpdateAsync(report);
+            await _reportRepository.TrackNewStatusChange(reject);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }

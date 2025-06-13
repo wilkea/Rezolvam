@@ -1,4 +1,4 @@
-@model ReportViewModel
+@model AdminMVC.ViewModel.Reports.CreateReportViewModel
 
 @{
     ViewData["Title"] = "Create Report";
@@ -10,19 +10,34 @@
         <div class="col-md-8 offset-md-2">
             <h2>Create New Report</h2>
             <hr />
-            <form asp-action="Create" method="post">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                 <div class="mb-3">
-                    <label asp-for="Title" class="form-label">Title</label>
+                    <label asp-for="Title" class="form-label"></label>
                     <input asp-for="Title" class="form-control" />
                     <span asp-validation-for="Title" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
-                    <label asp-for="Description" class="form-label">Description</label>
+                    <label asp-for="Description" class="form-label"></label>
                     <textarea asp-for="Description" class="form-control" rows="4"></textarea>
                     <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Location" class="form-label"></label>
+                    <input asp-for="Location" class="form-control" />
+                    <span asp-validation-for="Location" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Photos" class="form-label"></label>
+                    <input asp-for="Photos" class="form-control" type="file" multiple accept=".jpg,.jpeg,.png,.gif" />
+                    <span asp-validation-for="Photos" class="text-danger"></span>
+                    <div class="form-text">Max 5 photos, JPEG/PNG/GIF, max 5MB fiecare.</div>
                 </div>
 
                 <div class="mb-3">
@@ -36,25 +51,4 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict'
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.needs-validation')
-      
-              // Loop over them and prevent submission
-    
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
-    </script>
 }

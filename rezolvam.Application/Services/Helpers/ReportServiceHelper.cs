@@ -63,7 +63,7 @@ namespace rezolvam.Application.Services.Helpers
         /// WHY: Detail view needs additional information like status history
         /// HOW: Inherits from base mapping and adds detail-specific properties
         /// </summary>
-        public ReportDetailDto MapToDetailDto(Domain.Reports.Report report, Guid userId, bool isAdmin)
+        public ReportDetailDto MapToDetailDto(Report report, Guid userId, bool isAdmin)
         {
             if (report == null)
                 throw new ArgumentNullException(nameof(report));
@@ -93,7 +93,7 @@ namespace rezolvam.Application.Services.Helpers
                 
                 // WHY: Status history is sensitive information, only show to admins
                 // HOW: Check admin permission before mapping status history
-                StatusHistory = isAdmin && report.StatusHistory != null 
+                StatusHistory =  report.StatusHistory != null 
                     ? report.StatusHistory
                         .OrderByDescending(sc => sc.ChangedAt) // Most recent first
                         .Select(sc => MapStatusChangeToDto(sc))

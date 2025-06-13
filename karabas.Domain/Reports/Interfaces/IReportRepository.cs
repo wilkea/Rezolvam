@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using rezolvam.Domain.Report.StatusChanges;
+using rezolvam.Domain.ReportComments;
+using rezolvam.Domain.ReportPhotos;
 using rezolvam.Domain.Reports.StatusChanges.Enums;
 
 namespace rezolvam.Domain.Reports.Interfaces
@@ -23,6 +26,9 @@ namespace rezolvam.Domain.Reports.Interfaces
         Task DeleteAsync(Guid id);
         Task<bool> ExistsAsync(Guid id);
         Task<int> GetUserReportCountAsync(Guid userId);
+        Task TrackNewComment(ReportComment comment);
+        Task TrackNewPhoto(ReportPhoto photo);
+        Task TrackNewStatusChange(StatusChange statusChange);
 
     }
 }

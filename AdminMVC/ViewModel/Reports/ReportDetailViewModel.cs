@@ -52,5 +52,11 @@ namespace AdminMVC.ViewModel.Reports
         public bool HasPhotos => Photos.Any();
         public bool HasComments => Comments.Any();
         public bool HasStatusHistory => StatusHistory.Any();
+
+        // WHO: Role-based context (for UI adaptation)
+        public bool IsAdmin { get; set; }
+        public bool IsOwner { get; set; }
+     
+
     }
 }

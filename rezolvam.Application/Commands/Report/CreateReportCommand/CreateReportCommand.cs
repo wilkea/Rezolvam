@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using rezolvam.Application.DTOs;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,6 @@ namespace rezolvam.Application.Commands.Report
         public string Title { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public string Location { get; set; } = string.Empty;
-        public List<string>? PhotoUrls { get; set; }
+        public List<IFormFile> Photos { get; set; } = new List<IFormFile>();
     }
 }

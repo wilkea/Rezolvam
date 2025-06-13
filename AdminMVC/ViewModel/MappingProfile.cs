@@ -23,6 +23,7 @@ namespace Rezolvam.Infrastructure.Mapping
             ConfigureCommentMappings();
             ConfigurePhotoMappings();
             ConfigureDashboardMappings();
+            ConfigureStatusChangeMappings();
         }
 
         /// <summary>

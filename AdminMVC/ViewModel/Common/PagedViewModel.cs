@@ -27,5 +27,6 @@ namespace AdminMVC.ViewModel.Common
 
             return Enumerable.Range(start, end - start + 1);
         }
+         public object ExtraData { get; set; }
     }
 }

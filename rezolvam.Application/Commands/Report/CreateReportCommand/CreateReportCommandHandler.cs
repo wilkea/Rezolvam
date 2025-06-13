@@ -13,11 +13,13 @@ namespace rezolvam.Application.Commands.Report.Handlers
         private readonly IReportRepository _reportRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IReportServiceHelper _reportServiceHelper;
-        public CreateReportCommandHandler(IReportRepository reportRepository, IUnitOfWork unitOfWork, IReportServiceHelper reportServiceHelper)
+        private readonly IFileStorageService _fileStorageService;
+        public CreateReportCommandHandler(IReportRepository reportRepository, IUnitOfWork unitOfWork, IReportServiceHelper reportServiceHelper, IFileStorageService fileStorageService)
         {
             _unitOfWork = unitOfWork;
             _reportRepository = reportRepository;
             _reportServiceHelper = reportServiceHelper;
+            _fileStorageService = fileStorageService;
         }
         public async Task<ReportDto> Handle(CreateReportCommand request, CancellationToken cancellationToken)
         {
@@ -30,22 +32,29 @@ namespace rezolvam.Application.Commands.Report.Handlers
             if (string.IsNullOrWhiteSpace(request.Location))
                 throw new ArgumentException("Location is required", nameof(request.Location));
 
-            // WHY: Folosim factory method din domain pentru a crea entitatea
-            // HOW: Domain-ul se ocupă de validarea internă și setarea stării inițiale
+
+            var photoUrls = new List<string>();
+            if (request.Photos == null || request.Photos.Count == 0)
+                throw new ArgumentException("At least one photo is required", nameof(request.Photos));
+            foreach (var file in request.Photos)
+            {
+                var url = await _fileStorageService.SaveFileAsync(file, "uploads/reports");
+                photoUrls.Add(url);
+            }
             var report = Domain.Reports.Report.CreateReport(
                 request.UserId,
                 request.Title,
                 request.Description,
-                request.Location,
-                request.PhotoUrls);
+                request.Location);
 
-            // WHY: Persistăm entitatea prin repository pattern
-            // HOW: Repository abstrage detaliile de persistare
+            foreach (var url in photoUrls)
+            {
+                report.AddPhoto(url); // domain method
+            }
             await _reportRepository.AddAsync(report);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
 
-            // WHY: Returnăm DTO pentru a nu expune entitatea domain
-            // HOW: Helper-ul se ocupă de mapping și aplicarea regulilor de business
+            
             return _reportServiceHelper.MapToDto(report, request.UserId, false);
         }
     }

@@ -24,7 +24,7 @@ namespace rezolvam.Infrastructure
         {
             services.AddScoped<IReportRepository, ReportRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+            services.AddScoped<IFileStorageService, LocalFileStorageService>();
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 

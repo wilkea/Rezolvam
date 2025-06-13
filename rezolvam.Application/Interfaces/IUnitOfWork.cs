@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 namespace rezolvam.Application.Interfaces
 {
-    public interface IUnitOfWork :IDisposable
+    public interface IUnitOfWork : IDisposable
     {
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
+        DbContext Context { get; } // 🟢 Asta adaugi
     }
 }

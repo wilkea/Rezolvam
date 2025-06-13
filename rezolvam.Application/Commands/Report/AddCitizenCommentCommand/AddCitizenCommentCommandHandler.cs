@@ -27,9 +27,9 @@ namespace rezolvam.Application.Commands.Report.Handlers
 
             // WHY: Domain method enforces business rules
             // HOW: AddCitizenComment verifică ownership și status
-            report.AddCitizenComment(request.UserId, request.Message);
+            var comment = report.AddCitizenComment(request.UserId, request.Message);
 
-            await _reportRepository.UpdateAsync(report);
+            await _reportRepository.TrackNewComment(comment);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }

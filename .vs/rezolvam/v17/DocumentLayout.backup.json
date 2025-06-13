@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\VIKEA\\karabas-1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.api\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|solutionrelative:rezolvam.api\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{16A92F77-A2BE-4427-A0F0-866DBEFC4905}|karabas.Domain\\rezolvam.Domain.csproj|c:\\users\\vikea\\karabas-1\\karabas.domain\\rezolvam.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{16A92F77-A2BE-4427-A0F0-866DBEFC4905}|karabas.Domain\\rezolvam.Domain.csproj|solutionrelative:karabas.domain\\rezolvam.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.api\\rezolvam.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|solutionrelative:rezolvam.api\\rezolvam.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{91F17BF8-2F3D-49B9-BD97-22298C3214A1}|rezolvam.Application\\rezolvam.Application.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.application\\rezolvam.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{91F17BF8-2F3D-49B9-BD97-22298C3214A1}|rezolvam.Application\\rezolvam.Application.csproj|solutionrelative:rezolvam.application\\rezolvam.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{923B8FA8-750B-42E3-BBDD-AE53EAC3461E}|AdminMVC\\AdminMVC.csproj|c:\\users\\vikea\\karabas-1\\adminmvc\\adminmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{923B8FA8-750B-42E3-BBDD-AE53EAC3461E}|AdminMVC\\AdminMVC.csproj|solutionrelative:adminmvc\\adminmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{EC4E8242-B5D9-4012-8491-F1547712CC29}|rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.infrastructure\\migrations\\20250611190959_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC4E8242-B5D9-4012-8491-F1547712CC29}|rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj|solutionrelative:rezolvam.infrastructure\\migrations\\20250611190959_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{923B8FA8-750B-42E3-BBDD-AE53EAC3461E}|AdminMVC\\AdminMVC.csproj|c:\\users\\vikea\\karabas-1\\adminmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{923B8FA8-750B-42E3-BBDD-AE53EAC3461E}|AdminMVC\\AdminMVC.csproj|solutionrelative:adminmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{923B8FA8-750B-42E3-BBDD-AE53EAC3461E}|AdminMVC\\AdminMVC.csproj|c:\\users\\vikea\\karabas-1\\adminmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{923B8FA8-750B-42E3-BBDD-AE53EAC3461E}|AdminMVC\\AdminMVC.csproj|solutionrelative:adminmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{923B8FA8-750B-42E3-BBDD-AE53EAC3461E}|AdminMVC\\AdminMVC.csproj|c:\\users\\vikea\\karabas-1\\adminmvc\\adminmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{923B8FA8-750B-42E3-BBDD-AE53EAC3461E}|AdminMVC\\AdminMVC.csproj|solutionrelative:adminmvc\\adminmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC4E8242-B5D9-4012-8491-F1547712CC29}|rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.infrastructure\\infrastructureservicecollectionextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EC4E8242-B5D9-4012-8491-F1547712CC29}|rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.infrastructure\\rezolvam.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{EC4E8242-B5D9-4012-8491-F1547712CC29}|rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj|solutionrelative:rezolvam.infrastructure\\rezolvam.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16A92F77-A2BE-4427-A0F0-866DBEFC4905}|karabas.Domain\\rezolvam.Domain.csproj|c:\\users\\vikea\\karabas-1\\karabas.domain\\rezolvam.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{16A92F77-A2BE-4427-A0F0-866DBEFC4905}|karabas.Domain\\rezolvam.Domain.csproj|solutionrelative:karabas.domain\\rezolvam.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC4E8242-B5D9-4012-8491-F1547712CC29}|rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.infrastructure\\persistence\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,22 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EC4E8242-B5D9-4012-8491-F1547712CC29}|rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.infrastructure\\persistence\\configurations\\reports\\reportconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC4E8242-B5D9-4012-8491-F1547712CC29}|rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj|solutionrelative:rezolvam.infrastructure\\persistence\\configurations\\reports\\reportconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91F17BF8-2F3D-49B9-BD97-22298C3214A1}|rezolvam.Application\\rezolvam.Application.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.application\\rezolvam.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{91F17BF8-2F3D-49B9-BD97-22298C3214A1}|rezolvam.Application\\rezolvam.Application.csproj|solutionrelative:rezolvam.application\\rezolvam.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|solutionrelative:rezolvam.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|solutionrelative:rezolvam.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|c:\\users\\vikea\\karabas-1\\rezolvam.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C2913186-0A4C-475B-A01C-18BF3E0E0278}|rezolvam.Api\\rezolvam.Api.csproj|solutionrelative:rezolvam.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{16A92F77-A2BE-4427-A0F0-866DBEFC4905}|karabas.Domain\\rezolvam.Domain.csproj|c:\\users\\vikea\\karabas-1\\karabas.domain\\reports\\interfaces\\ireportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,11 +106,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ApplicationServiceCollectionExtentions.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\ApplicationServiceCollectionExtentions.cs",
               "RelativeDocumentMoniker": "rezolvam.Application\\ApplicationServiceCollectionExtentions.cs",
@@ -131,12 +119,24 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T10:21:19.168Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "20250611190959_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\Migrations\\20250611190959_Initial.cs",
+              "RelativeDocumentMoniker": "rezolvam.Infrastructure\\Migrations\\20250611190959_Initial.cs",
+              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\Migrations\\20250611190959_Initial.cs",
+              "RelativeToolTip": "rezolvam.Infrastructure\\Migrations\\20250611190959_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T19:09:59.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AdminMVC.csproj",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\AdminMVC.csproj",
               "RelativeDocumentMoniker": "AdminMVC\\AdminMVC.csproj",
@@ -144,71 +144,38 @@
               "RelativeToolTip": "AdminMVC\\AdminMVC.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-05T09:05:23.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\Program.cs",
-              "RelativeDocumentMoniker": "AdminMVC\\Program.cs",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\Program.cs",
-              "RelativeToolTip": "AdminMVC\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T07:11:00.493Z"
+              "WhenOpened": "2025-06-05T09:05:23.359Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "rezolvam.Api.csproj",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\rezolvam.Api.csproj",
-              "RelativeDocumentMoniker": "rezolvam.Api\\rezolvam.Api.csproj",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\rezolvam.Api.csproj",
-              "RelativeToolTip": "rezolvam.Api\\rezolvam.Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAOAAAAAAAAAA==",
+              "Title": "rezolvam.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\rezolvam.Application.csproj",
+              "RelativeDocumentMoniker": "rezolvam.Application\\rezolvam.Application.csproj",
+              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\rezolvam.Application.csproj",
+              "RelativeToolTip": "rezolvam.Application\\rezolvam.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-16T18:35:34.634Z"
+              "WhenOpened": "2025-05-16T17:41:54.173Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Report.cs",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\Reports\\Report.cs",
-              "RelativeDocumentMoniker": "karabas.Domain\\Reports\\Report.cs",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\Reports\\Report.cs",
-              "RelativeToolTip": "karabas.Domain\\Reports\\Report.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAcwCsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T09:20:04.376Z"
+              "DocumentIndex": 0,
+              "Title": "rezolvam.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\rezolvam.Domain.csproj",
+              "RelativeDocumentMoniker": "karabas.Domain\\rezolvam.Domain.csproj",
+              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\rezolvam.Domain.csproj",
+              "RelativeToolTip": "karabas.Domain\\rezolvam.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-15T08:14:53.975Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InfrastructureServiceCollectionExtentions.cs",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\InfrastructureServiceCollectionExtentions.cs",
-              "RelativeDocumentMoniker": "rezolvam.Infrastructure\\InfrastructureServiceCollectionExtentions.cs",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\InfrastructureServiceCollectionExtentions.cs",
-              "RelativeToolTip": "rezolvam.Infrastructure\\InfrastructureServiceCollectionExtentions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T18:44:13.931Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ReportStatus.cs",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\Reports\\Enums\\ReportStatus.cs",
-              "RelativeDocumentMoniker": "karabas.Domain\\Reports\\Enums\\ReportStatus.cs",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\Reports\\Enums\\ReportStatus.cs",
-              "RelativeToolTip": "karabas.Domain\\Reports\\Enums\\ReportStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T09:45:48.814Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\Persistence\\AppDbContext.cs",
               "RelativeDocumentMoniker": "rezolvam.Infrastructure\\Persistence\\AppDbContext.cs",
@@ -220,19 +187,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ReportController.cs",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\Controllers\\ReportController.cs",
-              "RelativeDocumentMoniker": "rezolvam.Api\\Controllers\\ReportController.cs",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\Controllers\\ReportController.cs",
-              "RelativeToolTip": "rezolvam.Api\\Controllers\\ReportController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAALAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "ReportStatus.cs",
+              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\Reports\\Enums\\ReportStatus.cs",
+              "RelativeDocumentMoniker": "karabas.Domain\\Reports\\Enums\\ReportStatus.cs",
+              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\Reports\\Enums\\ReportStatus.cs",
+              "RelativeToolTip": "karabas.Domain\\Reports\\Enums\\ReportStatus.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T19:04:37.2Z"
+              "WhenOpened": "2025-05-15T09:45:48.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InfrastructureServiceCollectionExtentions.cs",
+              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\InfrastructureServiceCollectionExtentions.cs",
+              "RelativeDocumentMoniker": "rezolvam.Infrastructure\\InfrastructureServiceCollectionExtentions.cs",
+              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\InfrastructureServiceCollectionExtentions.cs",
+              "RelativeToolTip": "rezolvam.Infrastructure\\InfrastructureServiceCollectionExtentions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T18:44:13.931Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\Reports\\Report.cs",
+              "RelativeDocumentMoniker": "karabas.Domain\\Reports\\Report.cs",
+              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\Reports\\Report.cs",
+              "RelativeToolTip": "karabas.Domain\\Reports\\Report.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAA0wCsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T09:20:04.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\Program.cs",
+              "RelativeDocumentMoniker": "AdminMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\Program.cs",
+              "RelativeToolTip": "AdminMVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T07:11:00.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "AdminMVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\appsettings.json",
+              "RelativeToolTip": "AdminMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-11T19:07:18.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ReportDto.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\DTOs\\ReportDto.cs",
               "RelativeDocumentMoniker": "rezolvam.Application\\DTOs\\ReportDto.cs",
@@ -244,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": ".filenesting.json",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\.filenesting.json",
               "RelativeDocumentMoniker": ".filenesting.json",
@@ -256,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IAppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\Interfaces\\IAppDbContext.cs",
               "RelativeDocumentMoniker": "rezolvam.Application\\Interfaces\\IAppDbContext.cs",
@@ -268,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "rezolvam.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj",
               "RelativeDocumentMoniker": "rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj",
@@ -276,23 +290,12 @@
               "RelativeToolTip": "rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-16T18:33:15.645Z"
+              "WhenOpened": "2025-05-16T18:33:15.645Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "rezolvam.Domain.csproj",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\rezolvam.Domain.csproj",
-              "RelativeDocumentMoniker": "karabas.Domain\\rezolvam.Domain.csproj",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\rezolvam.Domain.csproj",
-              "RelativeToolTip": "karabas.Domain\\rezolvam.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-15T08:14:53.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 18,
               "Title": "CreateReportCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\Commands\\CreateReport\\CreateReportCommandHandler.cs",
               "RelativeDocumentMoniker": "rezolvam.Application\\Commands\\CreateReport\\CreateReportCommandHandler.cs",
@@ -303,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\Persistence\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "rezolvam.Infrastructure\\Persistence\\UnitOfWork.cs",
@@ -315,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 19,
               "Title": "CreateReportCommand.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\Commands\\CreateReport\\CreateReportCommand.cs",
               "RelativeDocumentMoniker": "rezolvam.Application\\Commands\\CreateReport\\CreateReportCommand.cs",
@@ -326,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 20,
               "Title": "ReportQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\Queries\\ReportQueryHandler.cs",
               "RelativeDocumentMoniker": "rezolvam.Application\\Queries\\ReportQueryHandler.cs",
@@ -337,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 21,
               "Title": "ReportQuery.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\Queries\\ReportQuery.cs",
               "RelativeDocumentMoniker": "rezolvam.Application\\Queries\\ReportQuery.cs",
@@ -348,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ReportRepository.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\Persistence\\Configurations\\Reports\\ReportRepository.cs",
               "RelativeDocumentMoniker": "rezolvam.Infrastructure\\Persistence\\Configurations\\Reports\\ReportRepository.cs",
@@ -360,79 +363,30 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "ReportConfiguration.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\Persistence\\Configurations\\Reports\\ReportConfiguration.cs",
               "RelativeDocumentMoniker": "rezolvam.Infrastructure\\Persistence\\Configurations\\Reports\\ReportConfiguration.cs",
               "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Infrastructure\\Persistence\\Configurations\\Reports\\ReportConfiguration.cs",
               "RelativeToolTip": "rezolvam.Infrastructure\\Persistence\\Configurations\\Reports\\ReportConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAACBjwB4AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAACBjwB4AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T18:54:18.076Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 23,
               "Title": "ReportMappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\MappingProfiles\\ReportMappingProfile.cs",
               "RelativeDocumentMoniker": "rezolvam.Application\\MappingProfiles\\ReportMappingProfile.cs",
               "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\MappingProfiles\\ReportMappingProfile.cs",
               "RelativeToolTip": "rezolvam.Application\\MappingProfiles\\ReportMappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T13:11:15.37Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "rezolvam.Application.csproj",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\rezolvam.Application.csproj",
-              "RelativeDocumentMoniker": "rezolvam.Application\\rezolvam.Application.csproj",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Application\\rezolvam.Application.csproj",
-              "RelativeToolTip": "rezolvam.Application\\rezolvam.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-16T17:41:54.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "rezolvam.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\appsettings.json",
-              "RelativeToolTip": "rezolvam.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-17T09:44:38.964Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\Program.cs",
-              "RelativeDocumentMoniker": "rezolvam.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\Program.cs",
-              "RelativeToolTip": "rezolvam.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T13:04:46.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "rezolvam.Api\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\VIKEA\\karabas-1\\rezolvam.Api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "rezolvam.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-16T20:00:32.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "IReportRepository.cs",
               "DocumentMoniker": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\Reports\\Interfaces\\IReportRepository.cs",
               "RelativeDocumentMoniker": "karabas.Domain\\Reports\\Interfaces\\IReportRepository.cs",

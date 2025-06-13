@@ -6,56 +6,43 @@ using Rezolvam.Application.Interfaces;
 namespace rezolvam.Infrastructure.Services
 {
     public class AuthService : IAuthService
+{
+    private readonly UserManager<ApplicationUser> _userManager;
+    private readonly SignInManager<ApplicationUser> _signInManager;
+
+    public AuthService(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
     {
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
-
-        public AuthService(UserManager<ApplicationUser> userManager,
-                           SignInManager<ApplicationUser> signInManager)
-        {
-            _userManager = userManager;
-            _signInManager = signInManager;
-        }
-
-        // Login cu Identity cookie, fără JWT
-        public async Task<SignInResult> LoginAsync(string email, string password, bool rememberMe = false)
-        {
-            var user = await _userManager.FindByEmailAsync(email);
-            if (user == null)
-                return SignInResult.Failed;
-
-            // Aici setezi direct cookie-ul de Identity (fără token)
-            var result = await _signInManager.PasswordSignInAsync(user, password, rememberMe, lockoutOnFailure: false);
-            return result;
-        }
-
-        public async Task<IdentityResult> RegisterAsync(string email, string password, string fullName)
-        {
-            var user = new ApplicationUser
-            {
-                UserName = email,
-                Email = email,
-                FullName = fullName
-            };
-            var result = await _userManager.CreateAsync(user, password);
-
-            if (!result.Succeeded)
-                return result;
-
-            var roleResult = await _userManager.AddToRoleAsync(user, "user");
-            // Dacă adăugarea în rol eșuează, returnezi roleResult, altfel returnezi result-ul de create
-            return roleResult.Succeeded ? result : roleResult;
-        }
-        
-        // Logout
-        public async Task LogoutAsync()
-        {
-            await _signInManager.SignOutAsync();
-        }
-
-        public Task<IEnumerable<ClaimsIdentity>> CreateIdentityAsync(object user)
-        {
-            throw new NotImplementedException();
-        }
+        _userManager = userManager;
+        _signInManager = signInManager;
     }
+
+    public async Task<SignInResult> LoginAsync(string email, string password)
+    {
+        var user = await _userManager.FindByEmailAsync(email);
+        return await _signInManager.PasswordSignInAsync(user, password, isPersistent: false, lockoutOnFailure: false);
+    }
+
+    public async Task<IdentityResult> RegisterAsync(string email, string password, string fullName)
+    {
+        var user = new ApplicationUser { UserName = email, Email = email, FullName = fullName };
+        return await _userManager.CreateAsync(user, password);
+    }
+
+    public async Task<ClaimsIdentity> CreateIdentityAsync(ApplicationUser user)
+    {
+        var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Email, user.Email ?? ""),
+            new Claim(ClaimTypes.Name, user.FullName ?? "")
+        };
+
+        var roles = await _userManager.GetRolesAsync(user);
+        claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
+
+        return new ClaimsIdentity(claims, IdentityConstants.ApplicationScheme);
+    }
+
+    }
+
 }

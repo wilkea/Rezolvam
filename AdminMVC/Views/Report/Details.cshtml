@@ -1,0 +1,164 @@
+@model ReportDetailViewModel
+
+@{
+    ViewData["Title"] = "Report Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    bool isOwner = Model.IsOwner;
+}
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <h2>@Model.Title</h2>
+            <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+        </div>
+    </div>
+<div class="row">
+        <!-- Report Information Sidebar -->
+    <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Report Information</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h4>@Model.Title</h4>
+                        <span class="badge @Model.StatusCssClass">@Model.StatusDisplayName</span>
+                    </div>
+                    <dl class="row">
+                        <dt class="col-sm-3">Description</dt>
+                        <dd class="col-sm-9">@Model.Description</dd>
+
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">@Model.Location</dd>
+
+
+                        <dt class="col-sm-3">Created</dt>
+                        <dd class="col-sm-9">@Model.CreatedAt.ToString("g")</dd>
+
+                        @if (Model.UpdatedAt.HasValue)
+                        {
+                            <dt class="col-sm-3">Last Updated</dt>
+                            <dd class="col-sm-9">@Model.UpdatedAt.Value.ToString("g")</dd>
+                        }
+                    </dl>
+                </div>
+            </div>
+        </div>
+<!-- Status History Sidebar -->
+        <div class="col-md-5">
+            <div class="card mb-5">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Status History</h5>
+                </div>
+                <div class="card-body" style="max-height: 300px; overflow-y: auto;">
+                    @if (Model.HasStatusHistory)
+                    {
+                        <div class="timeline">
+                            @foreach (var change in Model.StatusHistory)
+                            {
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h6 class="mb-0">@change.Status</h6>
+                                        <small class="text-muted">@change.ChangedAt.ToString("g")</small>
+                                        @if (!string.IsNullOrEmpty(change.Reason))
+                                        {
+                                            <p class="mt-1">@change.Reason</p>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No status changes recorded.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Photos Section -->
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Photos</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.HasPhotos)
+                    {
+                        <div class="row g-3">
+                            @foreach (var photo in Model.Photos)
+                            {
+                                <div class="col-md-4">
+                                    <img src="@photo.PhotoUrl" class="img-fluid rounded" />
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No photos available.</p>
+                    }
+
+                    @if (isOwner && Model.CanUserAddPhoto)
+                    {
+                        <form asp-action="AddPhoto" method="post" enctype="multipart/form-data" class="mt-3">
+                            <input type="hidden" name="reportId" value="@Model.Id" />
+                            <div class="mb-3">
+                                <input type="file" name="photo" class="form-control" accept="image/*" required />
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm">Add Photo</button>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Comments</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.HasComments)
+                    {
+                        <div class="comments-list" style="max-height: 400px; overflow-y: auto;">
+                            @foreach (var comment in Model.Comments)
+                            {
+                                <div class="comment @comment.TypeCssClass mb-3">
+                                    <div class="comment-header">
+                                        <span class="comment-type">@comment.TypeDisplayName</span>
+                                        <small class="text-muted">@comment.CreatedAt.ToString("g")</small>
+                                    </div>
+                                    <div class="comment-body">
+                                        @comment.Message
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No comments yet.</p>
+                    }
+
+                    @if (isOwner && Model.CanUserComment)
+                    {
+                        <form asp-action="AddComment" method="post" class="mt-3">
+                            <input type="hidden" name="reportId" value="@Model.Id" />
+                            <div class="mb-3">
+                                <textarea name="message" class="form-control" rows="3" placeholder="Write your comment..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Comment</button>
+                        </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>

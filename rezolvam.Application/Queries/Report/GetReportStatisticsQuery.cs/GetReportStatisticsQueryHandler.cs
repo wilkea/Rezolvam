@@ -24,9 +24,7 @@ namespace rezolvam.Application.Queries.Report.Handlers
         {
              try
             {
-                var allReports = request.UserId.HasValue
-                    ? (await _reportRepository.GetPagedAsync(0, int.MaxValue, submitterId: request.UserId.Value)).Items
-                    : (await _reportRepository.GetAllAsync());
+                var allReports = await _reportRepository.GetAllAsync();
 
                 return new ReportStatisticsDto
                 {

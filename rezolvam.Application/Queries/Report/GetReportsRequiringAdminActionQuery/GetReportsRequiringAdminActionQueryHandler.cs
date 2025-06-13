@@ -28,20 +28,22 @@ namespace rezolvam.Application.Queries.Report.Handlers
             {
                 var pageIndex = request.Request.ValidatedPageIndex;
                 var pageSize = request.Request.ValidatedPageSize;
-                request.Request.StatusFilter = ReportStatus.Unverified;
 
-                var (items, totalCount, _, _) = await _reportRepository.GetPagedAsync(
+
+                 var (items, totalCount, _, _) = await _reportRepository.GetPagedAsync(
                     pageIndex,
                     pageSize,
                     request.Request.SearchTerm,
                     request.Request.StatusFilter);
 
-                var reportDtos = items.Select(report => _reportServiceHelper.MapToDto(report, Guid.Empty, false)).ToList();
+                var publicReports = items
+                    .Select(report => _reportServiceHelper.MapToDto(report, Guid.Empty, false))
+                    .ToList();
 
                 return new PagedResult<ReportDto>
                 {
-                    Items = reportDtos.AsReadOnly(),
-                    TotalCount = totalCount,
+                    Items = publicReports.AsReadOnly(),
+                    TotalCount = publicReports.Count,
                     PageIndex = pageIndex,
                     PageSize = pageSize,
                     TotalPages = (int)Math.Ceiling((double)totalCount / pageSize)
@@ -49,7 +51,7 @@ namespace rezolvam.Application.Queries.Report.Handlers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error retrieving  admin action reports ");
+                _logger.LogError(ex, "Error retrieving public reports");
                 throw;
             }
         }

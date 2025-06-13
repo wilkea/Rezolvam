@@ -23,9 +23,9 @@ namespace rezolvam.Application.Commands.Report.Handlers
 
             // WHY: Domain method handles status transition validation
             // HOW: VerifyReport checks current status and applies business rules
-            report.VerifyReport(request.AdminId, request.Reason);
+             var aprove = report.VerifyReport(request.AdminId, request.Reason);
 
-            await _reportRepository.UpdateAsync(report);
+            await _reportRepository.TrackNewStatusChange(aprove);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
         }
     }

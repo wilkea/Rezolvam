@@ -1,0 +1,237 @@
+@model ReportDetailViewModel
+
+@{
+      var availableStatuses = ViewBag.AvailableStatuses as IEnumerable<dynamic>;
+    ViewData["Title"] = "Report Details - Admin View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-start">
+                <h2>Report Details</h2>
+                <div>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+
+    @if (Model.Status == ReportStatus.Unverified)
+    {
+        <div class="alert alert-warning">
+            <strong>Admin Action Required!</strong> This report needs to be verified or rejected.
+            <div class="mt-2">
+                <form asp-action="VerifyReport" method="post" class="d-inline">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="reportId" value="@Model.Id" />
+                    <button type="submit" class="btn btn-success me-2">Verify Report</button>
+                </form>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#rejectModal">
+                    Reject Report
+                </button>
+            </div>
+        </div>
+    }
+
+    <div class="row">
+        <!-- Report Details Card -->
+        <div class="col-md-5">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Report Information</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h4>@Model.Title</h4>
+                        <span class="badge @Model.StatusCssClass">@Model.StatusDisplayName</span>
+                    </div>
+                    <dl class="row">
+                        <dt class="col-sm-3">Description</dt>
+                        <dd class="col-sm-9">@Model.Description</dd>
+
+                        <dt class="col-sm-3">Location</dt>
+                        <dd class="col-sm-9">@Model.Location</dd>
+
+                        <dt class="col-sm-3">Submitted By</dt>
+                        <dd class="col-sm-9">@Model.SubmittedById</dd>
+
+                        <dt class="col-sm-3">Created</dt>
+                        <dd class="col-sm-9">@Model.CreatedAt.ToString("g")</dd>
+
+                        @if (Model.UpdatedAt.HasValue)
+                        {
+                            <dt class="col-sm-3">Last Updated</dt>
+                            <dd class="col-sm-9">@Model.UpdatedAt.Value.ToString("g")</dd>
+                        }
+                    </dl>
+                </div>
+            </div>
+        </div>
+        
+<div class="col mt-4">
+    <h5>Change Status</h5>
+    <form asp-action="UpdateStatus" method="post">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="reportId" value="@Model.Id" />
+        <div class="mb-3">
+            <select name="newStatus" class="form-select" required>
+                @if (availableStatuses != null)
+                    {
+                        foreach (var status in availableStatuses)
+                        {
+                            <option value="@status.Value">@status.Text</option>
+                        }
+                    }
+            </select>
+        </div>
+        <div class="mb-3">
+            <textarea name="reason" class="form-control" rows="3" placeholder="Optional reason..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Update Status</button>
+    </form>
+</div>
+
+        <!-- Status History Sidebar -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Status History</h5>
+                </div>
+                <div class="card-body" style="max-height: 300px; overflow-y: auto;">
+                    @if (Model.HasStatusHistory)
+                    {
+                        <div class="timeline">
+                            @foreach (var change in Model.StatusHistory)
+                            {
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h6 class="mb-0">@change.Status</h6>
+                                        <small class="text-muted">@change.ChangedAt.ToString("g")</small>
+                                        @if (!string.IsNullOrEmpty(change.Reason))
+                                        {
+                                            <p class="mt-1">@change.Reason</p>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No status changes recorded.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="row">
+        <!-- Photos Section -->
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Photos</h5>
+                </div>
+                <div class="card-body">
+                    @if (Model.HasPhotos)
+                    {
+                        <div class="row g-3">
+                            @foreach (var photo in Model.Photos)
+                            {
+                                <div class="col-md-4">
+                                    <div class="image-container">
+                                        <img src="@photo.PhotoUrl" class="img-fluid rounded" alt="Report photo" />
+                                        
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No photos available.</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="col-md-6">
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">Comments</h5>
+                </div>
+                <div class="card-body">
+                    <!-- Admin Comment Form -->
+                    <form asp-action="AddAdminComment" method="post" class="mb-4">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="reportId" value="@Model.Id" />
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="3" placeholder="Add an admin comment..."></textarea>
+                        </div>
+                        <div class="mt-2">
+                            <button type="submit" class="btn btn-primary">Add Admin Comment</button>
+                        </div>
+                    </form>
+
+                    <!-- Comments List -->
+                    @if (Model.HasComments)
+                    {
+                        <div class="comments-list" style="max-height: 400px; overflow-y: auto;">
+                            @foreach (var comment in Model.Comments)
+                            {
+                                <div class="comment @comment.TypeCssClass mb-3">
+                                    <div class="comment-header">
+                                        <span class="comment-type">@comment.TypeDisplayName</span>
+                                        <small class="text-muted">@comment.CreatedAt.ToString("g")</small>
+                                    </div>
+                                    <div class="comment-body">
+                                        @comment.Message
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted">No comments yet.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reject Modal -->
+<div class="modal fade" id="rejectModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="RejectReport" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="reportId" value="@Model.Id" />
+                <div class="modal-header">
+                    <h5 class="modal-title">Reject Report</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="reason" class="form-label">Reason for Rejection</label>
+                        <textarea name="reason" id="reason" class="form-control" rows="3" required></textarea>
+                        <div class="form-text">Please provide a clear reason for rejecting this report.</div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-danger">Reject Report</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

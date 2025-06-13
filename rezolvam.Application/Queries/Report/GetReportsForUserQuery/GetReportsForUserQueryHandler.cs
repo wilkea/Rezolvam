@@ -28,23 +28,32 @@ namespace rezolvam.Application.Queries.Report.Handlers
                 var pageIndex = request.Request.ValidatedPageIndex;
                 var pageSize = request.Request.ValidatedPageSize;
 
-                Guid? submitterFilter = request.IsAdmin ? null : request.UserId;
-
                 var (items, totalCount, _, _) = await _reportRepository.GetPagedAsync(
                     pageIndex,
                     pageSize,
                     request.Request.SearchTerm,
                     request.Request.StatusFilter,
-                    submitterFilter);
-                var reportDtos = items.Select(report => _reportServiceHelper.MapToDto(report, request.UserId, request.IsAdmin)).ToList();
+                    null);  // Fetch all reports initially
+
+                // Filter the reports based on visibility rules
+                var filteredReports = items
+                    .Where(report => 
+                        request.IsAdmin || // Admin can see all reports
+                        report.SubmitedById == request.UserId || // User can see their own reports
+                        report.IsPubliclyVisible()) // Anyone can see public reports
+                    .ToList();
+
+                var reportDtos = filteredReports
+                    .Select(report => _reportServiceHelper.MapToDto(report, request.UserId, request.IsAdmin))
+                    .ToList();
 
                 return new PagedResult<ReportDto>
                 {
                     Items = reportDtos.AsReadOnly(),
-                    TotalCount = totalCount,
+                    TotalCount = filteredReports.Count,
                     PageIndex = pageIndex,
                     PageSize = pageSize,
-                    TotalPages = (int)Math.Ceiling((double)totalCount / pageSize)
+                    TotalPages = (int)Math.Ceiling((double)filteredReports.Count / pageSize)
                 };
             }
             catch (Exception ex)

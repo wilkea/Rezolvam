@@ -5,6 +5,7 @@ namespace rezolvam.Domain.ReportComments;
 public class ReportComment
 {
     public Guid Id { get; private set; }
+    public Guid ReportId { get; private set; } 
     public string Message { get; private set; }
     public Guid AuthorId { get; private set; }
     public CommentType Type { get; private set; }
@@ -22,19 +23,26 @@ public class ReportComment
         CreatedAt = DateTime.UtcNow;
         IsVisible = true;
     }
-    public static ReportComment CreateCitizenComment(Guid citizenId, string message)
+
+    public static ReportComment CreateCitizenComment(Guid reportId, Guid citizenId, string message)
     {
-        return new ReportComment(Guid.NewGuid(), message, citizenId, CommentType.User);
+        var comment = new ReportComment(Guid.NewGuid(), message, citizenId, CommentType.User);
+        comment.ReportId = reportId;
+        return comment;
     }
 
-    public static ReportComment CreateAdminComment(Guid adminId, string message)
+    public static ReportComment CreateAdminComment(Guid reportId, Guid adminId, string message)
     {
-        return new ReportComment(Guid.NewGuid(), message, adminId, CommentType.Admin);
+        var comment = new ReportComment(Guid.NewGuid(), message, adminId, CommentType.Admin);
+        comment.ReportId = reportId;
+        return comment;
     }
 
-    public static ReportComment CreateSystemComment(Guid systemUserId, string message)
+    public static ReportComment CreateSystemComment(Guid reportId, Guid systemUserId, string message)
     {
-        return new ReportComment(Guid.NewGuid(), message, systemUserId, CommentType.System);
+        var comment = new ReportComment(Guid.NewGuid(), message, systemUserId, CommentType.System);
+        comment.ReportId = reportId;
+        return comment;
     }
 
     public void Hide() => IsVisible = false;

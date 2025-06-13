@@ -1,5 +1,7 @@
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using rezolvam.Application.Interfaces;
+using rezolvam.Domain.ReportComments;
 using rezolvam.Domain.Reports.Interfaces;
 
 namespace rezolvam.Application.Commands.Report.Handlers
@@ -18,19 +20,18 @@ namespace rezolvam.Application.Commands.Report.Handlers
 
         public async Task Handle(AddAdminCommentCommand request, CancellationToken cancellationToken)
         {
-            if (string.IsNullOrWhiteSpace(request.Message))
-                throw new ArgumentException("Message cannot be empty", nameof(request.Message));
 
+
+            // Get a fresh copy of the report for each attempt
             var report = await _reportRepository.GetByIdAsync(request.ReportId);
             if (report == null)
                 throw new KeyNotFoundException($"Report with ID {request.ReportId} not found");
 
-            // WHY: Admin comments don't have the same restrictions as citizen comments
-            // HOW: Domain method creates admin-type comment
-            report.AddAdminComment(request.AdminId, request.Message);
+            var comment = report.AddAdminComment(request.AdminId, request.Message);
 
-            await _reportRepository.UpdateAsync(report);
+            await _reportRepository.TrackNewComment(comment);
             await _unitOfWork.SaveChangesAsync(cancellationToken);
+
         }
     }
 }

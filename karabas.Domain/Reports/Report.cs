@@ -23,14 +23,14 @@ namespace rezolvam.Domain.Reports
         public DateTime CreatedAt { get; private set; }
         public DateTime? UpdatedAt { get; private set; }
 
-        public IReadOnlyCollection<ReportPhoto> Photos => _photos.AsReadOnly();
-        private readonly List<ReportPhoto> _photos = new List<ReportPhoto>();
+        public IReadOnlyCollection<ReportPhoto> Photos => _photos;
+        private readonly List<ReportPhoto> _photos = new ();
 
-        public IReadOnlyCollection<ReportComment> Comments => _comments.AsReadOnly();
-        private readonly List<ReportComment> _comments = new List<ReportComment>();
+        private readonly List<ReportComment> _comments = new();
+        public IReadOnlyCollection<ReportComment> Comments => _comments;
 
-        public IReadOnlyCollection<StatusChange> StatusHistory => _statusHistory.AsReadOnly();
-        private readonly List<StatusChange> _statusHistory = new List<StatusChange>();
+        public IReadOnlyCollection<StatusChange> StatusHistory => _statusHistory;
+        private readonly List<StatusChange> _statusHistory = new() ;
         private Report() { }
 
         public static Report CreateReport(Guid submitedById, string title, string description, string location, List<string> photoUrls = null)
@@ -41,7 +41,8 @@ namespace rezolvam.Domain.Reports
                 SubmitedById = submitedById,
                 Title = title,
                 Description = description,
-                Status = 0,
+                Location = location,
+                Status = ReportStatus.Unverified,
                 CreatedAt = DateTime.UtcNow,
             };
             report.AddStatusChange(ReportStatus.Unverified, "System", "Report created - pending verification");
@@ -56,7 +57,7 @@ namespace rezolvam.Domain.Reports
             return report;
         }
 
-        public void AddPhoto(string photoUrl)
+        public ReportPhoto AddPhoto(string photoUrl)
         {
             if (string.IsNullOrWhiteSpace(photoUrl))
                 throw new ArgumentException("Photo URL cannot be null or empty.");
@@ -66,9 +67,10 @@ namespace rezolvam.Domain.Reports
 
             if (_photos.Any(p => p.PhotoUrl == photoUrl))
                 throw new InvalidOperationException("Photo with the same URL already exists.");
-
-            _photos.Add(new ReportPhoto(Guid.NewGuid(), photoUrl));
+            var photo = new ReportPhoto(Guid.NewGuid(), Id, photoUrl);
+            _photos.Add(photo);
             UpdatedAt = DateTime.UtcNow;
+            return photo;
         }
         public void RemovePhoto(Guid photoId, Guid requestBy)
         {
@@ -82,32 +84,34 @@ namespace rezolvam.Domain.Reports
             _photos.Remove(photo);
             UpdatedAt = DateTime.UtcNow;
         }
-        public void AddCitizenComment(Guid citizenId, string message)
+        public ReportComment AddCitizenComment(Guid citizenId, string message)
         {
             if (citizenId != SubmitedById)
                 throw new ArgumentException("Only report submitter can add citizen comments.");
 
             if (Status == ReportStatus.Resolved || Status == ReportStatus.Rejected)
                 throw new InvalidOperationException("Cannot add comments to a resolved report.");
-            var comment = ReportComment.CreateCitizenComment(citizenId, message);
+            var comment = ReportComment.CreateCitizenComment(Id, citizenId, message);
             _comments.Add(comment);
             UpdatedAt = DateTime.UtcNow;
+            return comment;
         }
-        public void AddAdminComment(Guid adminId, string message)
+        public ReportComment AddAdminComment(Guid adminId, string message)
         {
-            var comment = ReportComment.CreateAdminComment(adminId, message);
-
+            var comment = ReportComment.CreateAdminComment(Id, adminId, message);
             _comments.Add(comment);
             UpdatedAt = DateTime.UtcNow;
+            return comment;
         }
-        public void VerifyReport(Guid adminId, string reason = null)
+
+        public StatusChange VerifyReport(Guid adminId, string reason = null)
         {
             if (Status != ReportStatus.Unverified)
                 throw new InvalidOperationException("Report must be unverified to be verified.");
 
-            UpdateStatus(ReportStatus.Open, adminId, reason ?? "Report verified by admin.");
+            return UpdateStatus(ReportStatus.Open, adminId, reason ?? "Report verified by admin.");
         }
-        public void RejectReport(Guid adminId, string reason = null)
+        public StatusChange RejectReport(Guid adminId, string reason = null)
         {
             if (Status != ReportStatus.Unverified)
                 throw new InvalidOperationException("Report must be unverified to be verified.");
@@ -115,13 +119,13 @@ namespace rezolvam.Domain.Reports
             if (string.IsNullOrWhiteSpace(reason))
                 throw new ArgumentException("Reason for rejection cannot be null or empty.");
 
-            UpdateStatus(ReportStatus.Rejected, adminId, reason ?? "Report rejected by admin.");
+            return UpdateStatus(ReportStatus.Rejected, adminId, reason ?? "Report rejected by admin.");
         }
 
-        public void UpdateStatus(ReportStatus newStatus, Guid changedById, string reason = null)
+        public StatusChange UpdateStatus(ReportStatus newStatus, Guid changedById, string reason = null)
         {
             if (newStatus == Status)
-                return;
+                throw new InvalidOperationException("New status must be different from the current status.");
             if (!IsValidStatusTransition(Status, newStatus))
                 throw new InvalidOperationException("Invalid status transition.");
 
@@ -129,7 +133,8 @@ namespace rezolvam.Domain.Reports
             Status = newStatus;
             UpdatedAt = DateTime.UtcNow;
 
-            AddStatusChange(newStatus, changedById.ToString(), reason ?? $"Status changed from {oldStatus} to {newStatus}.");
+           var status = AddStatusChange(newStatus, changedById.ToString(), reason ?? $"Status changed from {oldStatus} to {newStatus}.");
+            return status;
         }
         private bool IsValidStatusTransition(ReportStatus from, ReportStatus to)
         {
@@ -147,14 +152,17 @@ namespace rezolvam.Domain.Reports
                 _ => false
             };
         }
-        private void AddStatusChange(ReportStatus status, string changedBy, string reason)
+        private StatusChange AddStatusChange(ReportStatus status, string changedBy, string reason)
         {
-            _statusHistory.Add(new StatusChange(
+            var newStatus = new StatusChange(
                 Guid.NewGuid(),
+                Id,
                 status,
                 changedBy,
                 reason,
-                DateTime.UtcNow));
+                DateTime.UtcNow);
+            _statusHistory.Add(newStatus);
+            return newStatus;
         }
         public bool IsPubliclyVisible() => Status != ReportStatus.Unverified && Status != ReportStatus.Rejected;
 

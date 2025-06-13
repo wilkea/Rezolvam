@@ -3,97 +3,99 @@
 @{
     ViewData["Title"] = "Reports";
     Layout = "~/Views/Shared/_Layout.cshtml";
+     var stats = Model.ExtraData as ReportStatisticsViewModel;
 }
+<div class="card border-0 shadow mb-4">
+    <div class="card-body">
+        <h4 class="card-title">📊 Report Statistics</h4>
+        @if (stats != null)
+        {
+            <div class="row text-center">
+                <div class="col">
+                    <strong>@stats.TotalReports</strong><br />
+                    <small>Total</small>
+                </div>
+                <div class="col">
+                    <strong>@stats.OpenReports</strong><br />
+                    <small>Open</small>
+                </div>
+                <div class="col">
+                    <strong>@stats.InProgressReports</strong><br />
+                    <small>In Progress</small>
+                </div>
+                <div class="col">
+                    <strong>@stats.ResolvedReports</strong><br />
+                    <small>Resolved</small>
+                </div>
+                <div class="col">
+                    <strong>@stats.RejectedReports</strong><br />
+                    <small>Rejected</small>
+                </div>
+                <div class="col">
+                    <strong>@stats.ReportsRequiringAction</strong><br />
+                    <small>Unverified</small>
+                </div>
+            </div>
+        }
+        else
+        {
+            <p class="text-muted">Statistics unavailable.</p>
+        }
+    </div>
+</div>
 
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2>Reports</h2>
         <a asp-action="Create" class="btn btn-primary">Create New Report</a>
     </div>
-<nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
 
-        @* Previous *@
-        <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
-            @if (Model.HasPreviousPage)
-            {
-                <a class="page-link" asp-action="Index" asp-route-pageIndex="@(Model.PageIndex - 1)">Previous</a>
-            }
-            else
-            {
-                <span class="page-link">Previous</span>
-            }
-        </li>
-
-        @* Pagini numerotate *@
-        @for (int i = 1; i <= Model.TotalPages; i++)
-        {
-            <li class="page-item @(i == Model.PageIndex ? "active" : "")">
-                @if (i == Model.PageIndex)
-                {
-                    <span class="page-link">@i</span>
-                }
-                else
-                {
-                    <a class="page-link" asp-action="Index" asp-route-pageIndex="@i">@i</a>
-                }
-            </li>
-        }
-
-        @* Next *@
-        <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
-            @if (Model.HasNextPage)
-            {
-                <a class="page-link" asp-action="Index" asp-route-pageIndex="@(Model.PageIndex + 1)">Next</a>
-            }
-            else
-            {
-                <span class="page-link">Next</span>
-            }
-        </li>
-    </ul>
-</nav>
-    <div class="row mb-3">
-        <div class="col">
-            <form asp-action="Index" method="get" class="d-flex">
-                <input type="text" name="searchTerm" class="form-control me-2" placeholder="Search reports..."
-                       value="@Context.Request.Query["searchTerm"]" />
+    <form asp-controller="Reports" asp-action="Index" method="get" class="mb-4">
+        <div class="row g-2">
+            <div class="col-md-10">
+                <input type="text" name="searchTerm" class="form-control" placeholder="Search reports..." value="@Context.Request.Query["searchTerm"]" />
                 <input type="hidden" name="pageSize" value="@Model.PageSize" />
+            </div>
+            <div class="col-md-2 d-grid">
                 <button type="submit" class="btn btn-outline-primary">Search</button>
-            </form>
+            </div>
         </div>
+    </form>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model.Items)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                        <p class="card-text text-truncate">@item.Description</p>
+                        <span class="badge @item.StatusCssClass">@item.Status</span>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 d-grid">
+                        <a asp-controller="Reports" asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
 
+    <nav class="mt-4" aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            <li class="page-item @(Model.HasPreviousPage ? "" : "disabled")">
+                <a class="page-link" asp-action="Index" asp-route-pageIndex="@(Model.PageIndex - 1)">Previous</a>
+            </li>
 
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.PageIndex ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-pageIndex="@i">@i</a>
+                </li>
+            }
 
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Description</th>
-                    <th>Status</th>
-                    <th>Photo</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model.Items)
-                {
-                    <tr>
-                        <td>@item.Title</td>
-                        <td>@item.Description</td>
-                        <td>@item.Status</td>
-                        <td>
-                        </td>
-                        <td>
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info btn-sm">Details</a>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-
-
+            <li class="page-item @(Model.HasNextPage ? "" : "disabled")">
+                <a class="page-link" asp-action="Index" asp-route-pageIndex="@(Model.PageIndex + 1)">Next</a>
+            </li>
+        </ul>
+    </nav>
 </div>

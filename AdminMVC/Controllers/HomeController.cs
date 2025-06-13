@@ -15,7 +15,8 @@ namespace AdminMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Reports");
+            
         }
 
         public IActionResult Privacy()

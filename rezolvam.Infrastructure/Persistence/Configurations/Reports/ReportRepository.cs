@@ -7,6 +7,9 @@ using rezolvam.Domain.Reports.Interfaces;
 using rezolvam.Domain.Reports;
 using Microsoft.EntityFrameworkCore;
 using rezolvam.Domain.Reports.StatusChanges.Enums;
+using rezolvam.Domain.ReportComments;
+using rezolvam.Domain.ReportPhotos;
+using rezolvam.Domain.Report.StatusChanges;
 
 namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
 {
@@ -18,7 +21,18 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
         {
             _context = context;
         }
-
+        public async Task TrackNewComment(ReportComment comment)
+        {
+            _context.Entry(comment).State = EntityState.Added;
+        }
+        public async Task TrackNewPhoto(ReportPhoto photo)
+        {
+            _context.Entry(photo).State = EntityState.Added;
+        }
+        public async Task TrackNewStatusChange(StatusChange statusChange)
+        {
+            _context.Entry(statusChange).State = EntityState.Added;
+        }
         public async Task AddAsync(Report report)
         {
             await _context.Reports.AddAsync(report);
@@ -34,23 +48,25 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
         public async Task<Report?> GetByIdAsync(Guid id)
         {
             return await _context.Reports
+            .Include(r => r.Comments)
             .Include(r => r.Photos)
-            .Include(p => p.Comments)
-            .Include(p => p.StatusHistory)
+            .Include(r => r.StatusHistory)
+
             .FirstOrDefaultAsync(r => r.Id == id) ??
                    throw new ArgumentNullException(nameof(id), "Report not found");
         }
         public Task UpdateAsync(Report report)
         {
-            _context.Reports.Update(report);
             return Task.CompletedTask;
         }
+        
         public async Task<IEnumerable<Report>> GetAllAsync()
         {
             return await _context.Reports
-                .Include(r => r.Photos)
                 .Include(r => r.Comments)
+                .Include(r => r.Photos)
                 .Include(r => r.StatusHistory)
+
                 .ToListAsync();
         }
         public async Task<(IReadOnlyList<Report> Items, int TotalCount, int PageIndex, int PageSize)> GetPagedAsync(
@@ -65,9 +81,10 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
 
 
             var query = _context.Reports
-            .Include(r => r.Photos)
             .Include(r => r.Comments)
+            .Include(r => r.Photos)
             .Include(r => r.StatusHistory)
+
             .AsQueryable();
 
 
