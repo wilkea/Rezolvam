@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PY1hdsT4QzxnVw7cr6pZ+pi4uEkO+jMN0cKnf5+gO5g=",
+  "Hash": "5asJbKd8pQeeeQkU2wGG32Mx/pbKf6M5Qww4THS1Gzc=",
   "Source": "AdminMVC",
   "BasePath": "_content/AdminMVC",
   "Mode": "Default",
@@ -1506,6 +1506,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\reports\\608294fe-880e-46d0-80ee-be353d005d98.png"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\745c6aab-5e69-49e3-9a6b-a050fab84c09.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/745c6aab-5e69-49e3-9a6b-a050fab84c09#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "thmy6et75t",
+      "Integrity": "nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\745c6aab-5e69-49e3-9a6b-a050fab84c09.png"
     },
     {
       "Identity": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\75c5c23c-5857-42e0-8f5d-1663d089bb29.png",
@@ -7706,6 +7727,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pLDAYrYf47AEhh/0XNctfJbqnXnFzgB6APERjeZf+Yc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/745c6aab-5e69-49e3-9a6b-a050fab84c09.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\745c6aab-5e69-49e3-9a6b-a050fab84c09.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 11:28:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/745c6aab-5e69-49e3-9a6b-a050fab84c09.thmy6et75t.png",
+      "AssetFile": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\wwwroot\\uploads\\reports\\745c6aab-5e69-49e3-9a6b-a050fab84c09.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 13 Jun 2025 11:28:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "thmy6et75t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/745c6aab-5e69-49e3-9a6b-a050fab84c09.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
         }
       ]
     },

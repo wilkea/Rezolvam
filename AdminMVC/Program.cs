@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using rezolvam.Application;
 using rezolvam.Domain.Common;
 using rezolvam.Infrastructure;
@@ -6,6 +6,7 @@ using Rezolvam.Infrastructure.Mapping;
 using AutoMapper;
 using rezolvam.Application.Interfaces;
 using rezolvam.Infrastructure.Services;
+using rezolvam.Infrastructure.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,7 @@ builder.Services.AddScoped<IFileStorageService, LocalFileStorageService>();
 
 
 var app = builder.Build();
+
 
 
 // Configure the HTTP request pipeline.

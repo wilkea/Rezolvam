@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rezolvam.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01740ee227e8a1eb0afc31b18c79ea5ba3280e03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cc96336e17f75af96a387e8c6ff529f70f55f95")]
 [assembly: System.Reflection.AssemblyProductAttribute("rezolvam.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rezolvam.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
