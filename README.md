@@ -39,10 +39,6 @@ Rezolvam is a simple reporting application built with **ASP.NET Core 8** using a
    ```bash
    dotnet run --project AdminMVC
    ```
-4. Optionally run the API project:
-   ```bash
-   dotnet run --project rezolvam.Api
-   ```
 
 Connection strings and JWT settings are found in `appsettings.json` inside each project. Adjust them as needed for your environment.
 
