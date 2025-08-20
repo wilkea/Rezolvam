@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aRUR2usRw9E=",
+  "dgSpecHash": "+YCzzW5PFds=",
   "success": true,
-  "projectFilePath": "C:\\Users\\VIKEA\\karabas-1\\karabas.Domain\\rezolvam.Domain.csproj",
+  "projectFilePath": "E:\\Новая папка\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VIKEA\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\VIKEA\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",

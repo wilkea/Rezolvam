@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wkxZocuhNl8=",
+  "dgSpecHash": "D2BzPSxwq0I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\VIKEA\\karabas-1\\AdminMVC\\AdminMVC.csproj",
+  "projectFilePath": "E:\\Новая папка\\Rezolvam\\AdminMVC\\AdminMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VIKEA\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\VIKEA\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
