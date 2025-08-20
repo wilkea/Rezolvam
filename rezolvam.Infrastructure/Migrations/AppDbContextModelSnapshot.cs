@@ -47,6 +47,20 @@ namespace rezolvam.Infrastructure.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "d4c3c7b4-c569-4d0f-9a39-aa47c827bdb1",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = "0c169b63-9f89-4f43-aa0b-e8abc3aa3daa",
+                            Name = "User",
+                            NormalizedName = "USER"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -134,6 +148,13 @@ namespace rezolvam.Infrastructure.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "398541de-d211-4e32-894f-ce44616ed317",
+                            RoleId = "d4c3c7b4-c569-4d0f-9a39-aa47c827bdb1"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -221,6 +242,25 @@ namespace rezolvam.Infrastructure.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "398541de-d211-4e32-894f-ce44616ed317",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "d2b67f2e-844a-494e-8749-1ca5aff6d901",
+                            Email = "admin@example.com",
+                            EmailConfirmed = true,
+                            FullName = "System Administrator",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@EXAMPLE.COM",
+                            NormalizedUserName = "ADMIN",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOCBMZUuGONBqkOPbDCsN8aEH08rfuV8HbUMZN8RUUjb70/EwMJG5V2umM998tZLKA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "a40264dc-31a8-43c3-8397-9becab0bda37",
+                            TwoFactorEnabled = false,
+                            UserName = "admin"
+                        });
                 });
 
             modelBuilder.Entity("rezolvam.Domain.Report.StatusChanges.StatusChange", b =>

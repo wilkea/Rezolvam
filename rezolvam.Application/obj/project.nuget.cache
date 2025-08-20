@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zbg61a4VdqM=",
+  "dgSpecHash": "WheDAqFtruE=",
   "success": true,
-  "projectFilePath": "E:\\Новая папка\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj",
+  "projectFilePath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VIKEA\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\VIKEA\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",

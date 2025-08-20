@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdminMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cc96336e17f75af96a387e8c6ff529f70f55f95")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c94818c0c9a5fda8a7ab6b822d3761dfb23c17db")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdminMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdminMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

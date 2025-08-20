@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\AdminMVC",
+    "\\rezolvam.Infrastructure",
+    "\\rezolvam.Infrastructure\\Persistence",
+    "\\rezolvam.Infrastructure\\Seeder",
+    "\\rezolvam.Infrastructure\\Services"
   ],
   "SelectedNode": "\\rezolvam.sln",
   "PreviewInSolutionExplorer": false

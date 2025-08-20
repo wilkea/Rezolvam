@@ -156,7 +156,7 @@ namespace AdminMVC.Controllers
                 command.Photos = model.Photos;
                 await _mediator.Send(command);
                 TempData["Success"] = "Report created successfully!";
-                return RedirectToAction("Index");
+                return RedirectToAction("Profile","Auth");
             }
             catch (Exception ex)
             {

@@ -5566,11 +5566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Новая папка\\Rezolvam\\AdminMVC\\AdminMVC.csproj",
+      "projectUniqueName": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\AdminMVC.csproj",
       "projectName": "AdminMVC",
-      "projectPath": "E:\\Новая папка\\Rezolvam\\AdminMVC\\AdminMVC.csproj",
+      "projectPath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\AdminMVC.csproj",
       "packagesPath": "C:\\Users\\VIKEA\\.nuget\\packages\\",
-      "outputPath": "E:\\Новая папка\\Rezolvam\\AdminMVC\\obj\\",
+      "outputPath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5591,11 +5591,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Новая папка\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj": {
-              "projectPath": "E:\\Новая папка\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj"
+            "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj": {
+              "projectPath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj"
             },
-            "E:\\Новая папка\\Rezolvam\\rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj": {
-              "projectPath": "E:\\Новая папка\\Rezolvam\\rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj"
+            "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Infrastructure\\rezolvam.Infrastructure.csproj"
             }
           }
         }

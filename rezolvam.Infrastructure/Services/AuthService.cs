@@ -39,10 +39,8 @@ namespace rezolvam.Infrastructure.Services
 
         var roles = await _userManager.GetRolesAsync(user);
         claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
-
         return new ClaimsIdentity(claims, IdentityConstants.ApplicationScheme);
     }
-
     }
 
 }

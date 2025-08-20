@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Новая папка\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj": {}
+    "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj": {}
   },
   "projects": {
-    "E:\\Новая папка\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj": {
+    "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Новая папка\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj",
         "projectName": "rezolvam.Domain",
-        "projectPath": "E:\\Новая папка\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj",
+        "projectPath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj",
         "packagesPath": "C:\\Users\\VIKEA\\.nuget\\packages\\",
-        "outputPath": "E:\\Новая папка\\Rezolvam\\karabas.Domain\\obj\\",
+        "outputPath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\karabas.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -99,14 +99,14 @@
         }
       }
     },
-    "E:\\Новая папка\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj": {
+    "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Новая папка\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj",
+        "projectUniqueName": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj",
         "projectName": "rezolvam.Application",
-        "projectPath": "E:\\Новая папка\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj",
+        "projectPath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Application\\rezolvam.Application.csproj",
         "packagesPath": "C:\\Users\\VIKEA\\.nuget\\packages\\",
-        "outputPath": "E:\\Новая папка\\Rezolvam\\rezolvam.Application\\obj\\",
+        "outputPath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\rezolvam.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -127,8 +127,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Новая папка\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj": {
-                "projectPath": "E:\\Новая папка\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj"
+              "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj": {
+                "projectPath": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\karabas.Domain\\rezolvam.Domain.csproj"
               }
             }
           }
