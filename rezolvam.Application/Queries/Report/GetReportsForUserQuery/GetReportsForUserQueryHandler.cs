@@ -38,9 +38,8 @@ namespace rezolvam.Application.Queries.Report.Handlers
                 // Filter the reports based on visibility rules
                 var filteredReports = items
                     .Where(report => 
-                        request.IsAdmin || // Admin can see all reports
-                        report.SubmitedById == request.UserId || // User can see their own reports
-                        report.IsPubliclyVisible()) // Anyone can see public reports
+                        report.SubmitedById == request.UserId  
+                        ) 
                     .ToList();
 
                 var reportDtos = filteredReports

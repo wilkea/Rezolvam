@@ -348,7 +348,6 @@ C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\staticweba
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AdminMVC.props
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AdminMVC.props
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\AdminMVC.csproj.Up2Date
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\AdminMVC.dll
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\refint\AdminMVC.dll

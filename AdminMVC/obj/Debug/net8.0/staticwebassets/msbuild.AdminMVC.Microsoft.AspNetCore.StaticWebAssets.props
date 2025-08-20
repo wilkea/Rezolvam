@@ -1404,6 +1404,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\reports\85af1b4f-e1bd-45f5-b15b-58db9d7593ef.jfif'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\reports\87f9e4fc-0cb8-40db-920f-445d3b5ee033.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdminMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdminMVC</BasePath>
+      <RelativePath>uploads/reports/87f9e4fc-0cb8-40db-920f-445d3b5ee033.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>38vgt728kp</Fingerprint>
+      <Integrity>E9tlQr7SFrUw7oP3C3NubnDsyEoxjfdZ0E+c78lMMB0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\reports\87f9e4fc-0cb8-40db-920f-445d3b5ee033.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\reports\89170884-ce77-4a9f-96ab-3e1c77dfa9f7.jfif'))">
       <SourceType>Package</SourceType>
       <SourceId>AdminMVC</SourceId>
@@ -1691,6 +1709,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\reports\c8f3469f-f0aa-45a6-a6ce-7ab5ca7fa2ce.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\reports\d08d380e-5af6-4058-9d27-6d4042a3bee2.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdminMVC</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdminMVC</BasePath>
+      <RelativePath>uploads/reports/d08d380e-5af6-4058-9d27-6d4042a3bee2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>38vgt728kp</Fingerprint>
+      <Integrity>E9tlQr7SFrUw7oP3C3NubnDsyEoxjfdZ0E+c78lMMB0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\reports\d08d380e-5af6-4058-9d27-6d4042a3bee2.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\reports\d6a4a389-2503-48e5-9f19-3d786b0709a4.png'))">
       <SourceType>Package</SourceType>
