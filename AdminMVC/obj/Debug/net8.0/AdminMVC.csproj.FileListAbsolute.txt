@@ -354,3 +354,4 @@ C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\refint\Adm
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\AdminMVC.pdb
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\AdminMVC.genruntimeconfig.cache
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\ref\AdminMVC.dll
+C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
