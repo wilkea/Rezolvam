@@ -10,6 +10,7 @@
 **/appsettings.Development.json
 **/secrets.json
 
+
 # Build outputs
 bin/
 obj/
@@ -19,3 +20,4 @@ obj/
 
 # Logs
 *.log
+*.dll

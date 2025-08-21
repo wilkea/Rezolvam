@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rezolvam.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2086d0deb9345b397ee4ca235072a0623936770")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e6b1a23fa735a57f7025f8ed8d4de7bff408afa")]
 [assembly: System.Reflection.AssemblyProductAttribute("rezolvam.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rezolvam.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

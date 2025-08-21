@@ -176,8 +176,6 @@ C:\Users\VIKEA\karabas-1\AdminMVC\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Wor
 C:\Users\VIKEA\karabas-1\AdminMVC\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\VIKEA\karabas-1\AdminMVC\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\VIKEA\karabas-1\AdminMVC\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\appsettings.json
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\AdminMVC.staticwebassets.runtime.json
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\AdminMVC.staticwebassets.endpoints.json
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\AdminMVC.exe
@@ -357,3 +355,5 @@ C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\obj\Debug\net8.0\ref\AdminM
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\Azure.Storage.Blobs.dll
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\Azure.Storage.Common.dll
 C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\System.IO.Hashing.dll
+C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\appsettings.Development copy.json
+C:\Users\VIKEA\source\repos\wilkea\Rezolvam\AdminMVC\bin\Debug\net8.0\appsettings.json

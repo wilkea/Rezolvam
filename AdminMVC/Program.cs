@@ -14,7 +14,7 @@ builder.Services.AddApplicationLayer();
 builder.Services.AddInfrastructureLayer(builder.Configuration);
 builder.Services.AddControllersWithViews();
 builder.Services.AddAutoMapper(typeof(ReportMappingProfile).Assembly);
-builder.Services.AddScoped<IFileStorageService, LocalFileStorageService>();
+// builder.Services.AddScoped<IFileStorageService, LocalFileStorageService>();
 
 
 var app = builder.Build();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9sPdZ9gKyU6LaeoLo9dcn1NRYF8+8TBWL7f9DvmMpyc=",
+  "Hash": "bBX1oCAJtHp+sK0+g4bNi2XLYPPS6vWBVgp2Wp3ylkk=",
   "Source": "AdminMVC",
   "BasePath": "_content/AdminMVC",
   "Mode": "Default",
@@ -1319,6 +1319,27 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\uploads\\reports\\0e12a3c2-1ca4-4747-9f9f-f316ecb51f06.png",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/0e12a3c2-1ca4-4747-9f9f-f316ecb51f06#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "thmy6et75t",
+      "Integrity": "nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\0e12a3c2-1ca4-4747-9f9f-f316ecb51f06.png"
+    },
+    {
       "Identity": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\uploads\\reports\\2861701b-7f85-40b3-965e-f935e28ef923.jfif",
       "SourceId": "AdminMVC",
       "SourceType": "Discovered",
@@ -2199,6 +2220,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\reports\\f68983af-9181-400a-8054-ab0c9b80bb6e.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\uploads\\reports\\f978640b-165f-489b-8acb-5dd1c7d6606b.jpg",
+      "SourceId": "AdminMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\",
+      "BasePath": "_content/AdminMVC",
+      "RelativePath": "uploads/reports/f978640b-165f-489b-8acb-5dd1c7d6606b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "38vgt728kp",
+      "Integrity": "E9tlQr7SFrUw7oP3C3NubnDsyEoxjfdZ0E+c78lMMB0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\reports\\f978640b-165f-489b-8acb-5dd1c7d6606b.jpg"
     }
   ],
   "Endpoints": [
@@ -7287,6 +7329,88 @@
       ]
     },
     {
+      "Route": "uploads/reports/0e12a3c2-1ca4-4747-9f9f-f316ecb51f06.png",
+      "AssetFile": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\uploads\\reports\\0e12a3c2-1ca4-4747-9f9f-f316ecb51f06.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 22:17:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/0e12a3c2-1ca4-4747-9f9f-f316ecb51f06.thmy6et75t.png",
+      "AssetFile": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\uploads\\reports\\0e12a3c2-1ca4-4747-9f9f-f316ecb51f06.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 22:17:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "thmy6et75t"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/0e12a3c2-1ca4-4747-9f9f-f316ecb51f06.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwtXpks1RrqzFNmyN+0I+6lgmd/NT/dXO7uV/1HYUBs="
+        }
+      ]
+    },
+    {
       "Route": "uploads/reports/2861701b-7f85-40b3-965e-f935e28ef923.ggwommiqyc.jfif",
       "AssetFile": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\uploads\\reports\\2861701b-7f85-40b3-965e-f935e28ef923.jfif",
       "Selectors": [],
@@ -10727,6 +10851,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-d9D1PtkE5XV7ziuC1VNKQVw6IWl9OlRsF5xmUg8DLLI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/f978640b-165f-489b-8acb-5dd1c7d6606b.38vgt728kp.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\uploads\\reports\\f978640b-165f-489b-8acb-5dd1c7d6606b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9tlQr7SFrUw7oP3C3NubnDsyEoxjfdZ0E+c78lMMB0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 22:34:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "38vgt728kp"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/reports/f978640b-165f-489b-8acb-5dd1c7d6606b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9tlQr7SFrUw7oP3C3NubnDsyEoxjfdZ0E+c78lMMB0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/reports/f978640b-165f-489b-8acb-5dd1c7d6606b.jpg",
+      "AssetFile": "C:\\Users\\VIKEA\\source\\repos\\wilkea\\Rezolvam\\AdminMVC\\wwwroot\\uploads\\reports\\f978640b-165f-489b-8acb-5dd1c7d6606b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9tlQr7SFrUw7oP3C3NubnDsyEoxjfdZ0E+c78lMMB0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 21 Aug 2025 22:34:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9tlQr7SFrUw7oP3C3NubnDsyEoxjfdZ0E+c78lMMB0="
         }
       ]
     }
