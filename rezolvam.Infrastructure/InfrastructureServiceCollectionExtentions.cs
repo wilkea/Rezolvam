@@ -24,9 +24,11 @@ namespace rezolvam.Infrastructure
         {
             services.AddScoped<IReportRepository, ReportRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IFileStorageService, LocalFileStorageService>();
+            // services.AddScoped<IFileStorageService, LocalFileStorageService>();
+            services.AddScoped<IFileStorageService, AzureBlobStorageService>();
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
 
             // Configure JWT settings first
             services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));

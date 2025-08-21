@@ -247,6 +247,10 @@
               "target": "Package",
               "version": "[14.0.0, )"
             },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.25.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.5.0, )"
