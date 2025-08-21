@@ -5,6 +5,11 @@
 *.userosscache
 *.sln.docstates
 
+# .net
+**/appsettings.json
+**/appsettings.Development.json
+**/secrets.json
+
 # Build outputs
 bin/
 obj/
