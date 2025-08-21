@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net.Cache;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,13 +25,13 @@ namespace rezolvam.Domain.Reports
         public DateTime? UpdatedAt { get; private set; }
 
         public IReadOnlyCollection<ReportPhoto> Photos => _photos;
-        private readonly List<ReportPhoto> _photos = new ();
+        private readonly List<ReportPhoto> _photos = new();
 
         private readonly List<ReportComment> _comments = new();
         public IReadOnlyCollection<ReportComment> Comments => _comments;
 
         public IReadOnlyCollection<StatusChange> StatusHistory => _statusHistory;
-        private readonly List<StatusChange> _statusHistory = new() ;
+        private readonly List<StatusChange> _statusHistory = new();
         private Report() { }
 
         public static Report CreateReport(Guid submitedById, string title, string description, string location, List<string> photoUrls = null)
@@ -133,7 +134,7 @@ namespace rezolvam.Domain.Reports
             Status = newStatus;
             UpdatedAt = DateTime.UtcNow;
 
-           var status = AddStatusChange(newStatus, changedById.ToString(), reason ?? $"Status changed from {oldStatus} to {newStatus}.");
+            var status = AddStatusChange(newStatus, changedById.ToString(), reason ?? $"Status changed from {oldStatus} to {newStatus}.");
             return status;
         }
         private bool IsValidStatusTransition(ReportStatus from, ReportStatus to)
@@ -165,7 +166,7 @@ namespace rezolvam.Domain.Reports
             return newStatus;
         }
         public bool IsPubliclyVisible() => Status != ReportStatus.Unverified && Status != ReportStatus.Rejected;
-
+   
         public bool CanUserComment(Guid userId) => userId == SubmitedById && IsPubliclyVisible() && Status != ReportStatus.Resolved;
 
         public bool CanUserAddPhoto(Guid userId) => userId == SubmitedById && IsPubliclyVisible() && Status != ReportStatus.Resolved;

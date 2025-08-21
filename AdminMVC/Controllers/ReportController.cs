@@ -45,9 +45,6 @@ namespace AdminMVC.Controllers
                     {
                         PageIndex = pagination.ValidatedPageIndex,
                         PageSize = pagination.ValidatedPageSize,
-                        SearchTerm = pagination.SearchTerm,
-                        StatusFilter = pagination.StatusFilter,
-                        SubmitterId = pagination.SubmitterId
                     }
                 };
 
@@ -65,7 +62,7 @@ namespace AdminMVC.Controllers
                     HasNextPage = dtoResult.HasNextPage,
                     ExtraData = _mapper.Map<ReportStatisticsViewModel>(statisticsDto)
                 };
-
+                Console.WriteLine($"Total Reports: {pagedResult.TotalCount}, Page Index: {pagedResult.PageIndex}, Page Size: {pagedResult.PageSize}");
                 ViewBag.AvailableStatuses = new[] { "Open", "InProgress", "Resolved" };
 
                 return View(pagedResult);

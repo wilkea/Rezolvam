@@ -21,12 +21,11 @@ namespace AdminMVC.ViewModel.Common
         // HOW: Provides page numbers for pagination controls
         public IEnumerable<int> GetPageNumbers(int maxPages = 5)
         {
-            var start = Math.Max(0, PageIndex - maxPages / 2);
+            var start = Math.Max(1, PageIndex - maxPages / 2);
             var end = Math.Min(TotalPages - 1, start + maxPages - 1);
-            start = Math.Max(0, end - maxPages + 1);
-
+            start = Math.Max(1, end - maxPages + 1);
             return Enumerable.Range(start, end - start + 1);
         }
-         public object ExtraData { get; set; }
+        public object ExtraData { get; set; }
     }
 }

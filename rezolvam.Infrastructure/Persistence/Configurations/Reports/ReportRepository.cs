@@ -10,6 +10,8 @@ using rezolvam.Domain.Reports.StatusChanges.Enums;
 using rezolvam.Domain.ReportComments;
 using rezolvam.Domain.ReportPhotos;
 using rezolvam.Domain.Report.StatusChanges;
+using rezolvam.Domain.Reports.Specifications;
+using System.Linq.Expressions;
 
 namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
 {
@@ -59,7 +61,7 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
         {
             return Task.CompletedTask;
         }
-        
+
         public async Task<IEnumerable<Report>> GetAllAsync()
         {
             return await _context.Reports
@@ -72,9 +74,7 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
         public async Task<(IReadOnlyList<Report> Items, int TotalCount, int PageIndex, int PageSize)> GetPagedAsync(
             int pageIndex,
             int pageSize,
-            string? searchTerm = null,
-            ReportStatus? statusFilter = null,
-            Guid? submitterId = null)
+            Expression<Func<Report, bool>>? filter = null)
         {
             int offset = (pageIndex - 1) * pageSize;
             if (offset < 0) offset = 0;
@@ -88,23 +88,8 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
             .AsQueryable();
 
 
-            if (!string.IsNullOrWhiteSpace(searchTerm))
-            {
-                query = query.Where(r =>
-                    r.Title.Contains(searchTerm) ||
-                    r.Description.Contains(searchTerm) ||
-                    r.Location.Contains(searchTerm));
-            }
-
-            if (statusFilter.HasValue)
-            {
-                query = query.Where(r => r.Status == statusFilter.Value);
-            }
-
-            if (submitterId.HasValue)
-            {
-                query = query.Where(r => r.SubmitedById == submitterId.Value);
-            }
+            if (filter != null)
+                query = query.Where(filter);
 
             var totalCount = await query.CountAsync();
 
@@ -113,7 +98,6 @@ namespace rezolvam.Infrastructure.Persistence.Configurations.Reports
                 .Skip(offset)
                 .Take(pageSize)
                 .ToListAsync();
-
             return (items.AsReadOnly(), totalCount, pageIndex, pageSize);
         }
         public async Task<bool> ExistsAsync(Guid id)

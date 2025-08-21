@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using rezolvam.Application.DTOs;
 using rezolvam.Application.Services.Helpers;
 using rezolvam.Domain.Reports.Interfaces;
+using rezolvam.Domain.Reports.Specifications;
 using Rezolvam.Application.DTOs.Common;
 
 namespace rezolvam.Application.Queries.Report.Handlers
@@ -27,18 +28,15 @@ namespace rezolvam.Application.Queries.Report.Handlers
                 var pageIndex = request.Request.ValidatedPageIndex;
                 var pageSize = request.Request.ValidatedPageSize;
 
-
                  var (items, totalCount, _, _) = await _reportRepository.GetPagedAsync(
                     pageIndex,
                     pageSize,
-                    request.Request.SearchTerm,
-                    request.Request.StatusFilter);
-
+                    ReportSpecifications.PubliclyVisible);
+                
                 var publicReports = items
                     .Where(r => r.IsPubliclyVisible())
                     .Select(report => _reportServiceHelper.MapToDto(report, Guid.Empty, false))
                     .ToList();
-
                 return new PagedResult<ReportDto>
                 {
                     Items = publicReports.AsReadOnly(),

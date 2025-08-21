@@ -44,25 +44,7 @@ namespace Rezolvam.Infrastructure.Mapping
                 .ForMember("HasPreviousPage", opt => opt.MapFrom("HasPreviousPage"))
                 .ForMember("HasNextPage", opt => opt.MapFrom("HasNextPage"));
 
-            // PaginationViewModel -> PaginationRequest
-            // WHY: Convert user-friendly 1-based pagination to 0-based for business layer
-            // HOW: Use PageIndex property that automatically converts Page-1
-            CreateMap<PaginationViewModel, PaginationRequest>()
-                .ForMember(dest => dest.PageIndex, opt => opt.MapFrom(src => src.PageIndex))
-                .ForMember(dest => dest.PageSize, opt => opt.MapFrom(src => src.PageSize))
-                .ForMember(dest => dest.SearchTerm, opt => opt.MapFrom(src => src.SearchTerm))
-                .ForMember(dest => dest.StatusFilter, opt => opt.MapFrom(src => src.StatusFilter))
-                .ForMember(dest => dest.SubmitterId, opt => opt.MapFrom(src => src.SubmitterId));
-
-            // PaginationRequest -> PaginationViewModel
-            // WHY: Convert 0-based pagination back to 1-based for display
-            // HOW: Add 1 to PageIndex for user-friendly display
-            CreateMap<PaginationRequest, PaginationViewModel>()
-                .ForMember(dest => dest.Page, opt => opt.MapFrom(src => src.PageIndex + 1))
-                .ForMember(dest => dest.PageSize, opt => opt.MapFrom(src => src.PageSize))
-                .ForMember(dest => dest.SearchTerm, opt => opt.MapFrom(src => src.SearchTerm))
-                .ForMember(dest => dest.StatusFilter, opt => opt.MapFrom(src => src.StatusFilter))
-                .ForMember(dest => dest.SubmitterId, opt => opt.MapFrom(src => src.SubmitterId));
+            
         }
 
         /// <summary>
@@ -295,16 +277,3 @@ namespace Rezolvam.Infrastructure.Mapping
     }
 }
 
-// Startup.cs or Program.cs registration
-/*
-// WHY: Register AutoMapper with DI container for application-wide use
-// HOW: Add AutoMapper services and register all profiles in assembly
-
-services.AddAutoMapper(typeof(ReportMappingProfile));
-
-// Alternative explicit registration:
-services.AddAutoMapper(config =>
-{
-    config.AddProfile<ReportMappingProfile>();
-});
-*/

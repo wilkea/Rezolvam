@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using rezolvam.Domain.Report.StatusChanges;
@@ -16,9 +17,7 @@ namespace rezolvam.Domain.Reports.Interfaces
         Task<(IReadOnlyList<Report> Items, int TotalCount, int PageIndex, int PageSize)> GetPagedAsync(
             int pageIndex,
             int pageSize,
-            string? searchTerm = null,
-            ReportStatus? statusFilter = null,
-            Guid? submitterId = null
+            Expression<Func<Report, bool>>? filter = null
             );
         Task<Report> GetByIdAsync(Guid id);
         Task AddAsync(Report report);

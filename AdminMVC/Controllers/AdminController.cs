@@ -48,9 +48,6 @@ namespace AdminMVC.Controllers
                     {
                         PageIndex = pagination.ValidatedPageIndex,
                         PageSize = pagination.ValidatedPageSize,
-                        SearchTerm = pagination.SearchTerm,
-                        StatusFilter = pagination.StatusFilter,
-                        SubmitterId = pagination.SubmitterId
                     }
                 };
                 var dtoResult = await _mediator.Send(query);

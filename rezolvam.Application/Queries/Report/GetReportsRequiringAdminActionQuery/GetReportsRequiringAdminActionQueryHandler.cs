@@ -33,8 +33,7 @@ namespace rezolvam.Application.Queries.Report.Handlers
                  var (items, totalCount, _, _) = await _reportRepository.GetPagedAsync(
                     pageIndex,
                     pageSize,
-                    request.Request.SearchTerm,
-                    request.Request.StatusFilter);
+                    null);
 
                 var publicReports = items
                     .Select(report => _reportServiceHelper.MapToDto(report, Guid.Empty, false))
